@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Raisoni Portal - Company Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#6b33dc",
+                      "on-tertiary-container": "#383838",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e0e3e6",
+                      "primary-fixed": "#ffdbc8",
+                      "primary-container": "#fd7e14",
+                      "outline": "#8b7264",
+                      "surface": "#f7f9fc",
+                      "tertiary-container": "#a2a1a1",
+                      "on-primary-fixed": "#321300",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#5509c6",
+                      "surface-variant": "#e0e3e6",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#f7f9fc",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed": "#23005c",
+                      "surface-bright": "#f7f9fc",
+                      "surface-tint": "#984700",
+                      "inverse-on-surface": "#eff1f4",
+                      "on-background": "#191c1e",
+                      "tertiary-fixed": "#e4e2e2",
+                      "surface-container": "#eceef1",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-low": "#f2f4f7",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "on-secondary-container": "#fffbff",
+                      "primary": "#984700",
+                      "on-surface-variant": "#574236",
+                      "secondary-container": "#8552f6",
+                      "inverse-primary": "#ffb68a",
+                      "tertiary-fixed-dim": "#c8c6c6",
+                      "on-surface": "#191c1e",
+                      "on-primary-container": "#5e2900",
+                      "inverse-surface": "#2d3133",
+                      "secondary-fixed": "#e9ddff",
+                      "surface-dim": "#d8dadd",
+                      "primary-fixed-dim": "#ffb68a",
+                      "tertiary": "#5e5e5e",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#d0bcff",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#dfc0b0",
+                      "surface-container-high": "#e6e8eb",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "on-primary-fixed-variant": "#743500"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "stack-lg": "24px",
+                      "stack-sm": "8px",
+                      "section-gap": "96px",
+                      "stack-md": "16px",
+                      "container-max": "1200px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "title-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-inverse-surface sticky top-0 z-50 transition-all duration-300 shadow-sm" id="top-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Logo -->
+<a class="font-headline-md text-headline-md font-bold text-secondary dark:text-secondary-fixed flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary-container text-[32px] icon-fill">school</span>
+                Raisoni Portal
+            </a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Students</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Institutes</a>
+<a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary font-bold hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Companies</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Mentor</a>
+</div>
+<!-- Actions -->
+<div class="hidden md:flex items-center space-x-4">
+<button class="font-label-md text-label-md text-primary font-bold px-4 py-2 hover:bg-surface-container-highest rounded transition-colors">Login</button>
+<button class="font-label-md text-label-md bg-primary-container text-white px-6 py-2 rounded font-bold hover:bg-opacity-90 transition-all hover:-translate-y-[1px] shadow-sm">Sign up</button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface-container-lowest overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter py-24 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<h1 class="font-display-lg text-display-lg md:text-[72px] text-on-surface mb-6 leading-tight">
+                        Hire the Next Generation of <span class="text-primary-container">Top Talent.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Connect directly with ambitious students from Raisoni. Streamline your hiring process, post internships, and manage applications all in one modern platform.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-white font-label-md text-label-md px-8 py-4 rounded-lg font-bold hover:bg-opacity-90 transition-all hover:shadow-lg shadow-md flex items-center justify-center gap-2">
+                            Post an Internship <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="bg-surface text-primary-container border border-primary-container font-label-md text-label-md px-8 py-4 rounded-lg font-bold hover:bg-surface-container-highest transition-colors flex items-center justify-center">
+                            View Student Profiles
+                        </button>
+</div>
+</div>
+<div class="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A diverse group of motivated engineering and business students in a modern university campus setting, looking focused and collaborative around a laptop. Bright, natural lighting, optimistic corporate modern aesthetic with vibrant orange and purple accents in their clothing or surroundings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnaTJIJMh8uaoHGEsdY8XjwsiIijrACFpNDgvFWx7mWSbKMBR4YoweT8k8YRFBCJXzcz7Z2lHTIhD6ZQBqGNfJhx60kiNN0nBVgUEZ7K86CuOOTi8d8nD9tSy_TUS2qXl_zNlBNiF2w7ZsOIPAxPW_9kOEwcULeUzdofs2i1T98_lj0pVb01g2ADceiMKXxVeVxW2nAi1V_QGdrTRFDsmj3Npj7obN1iIV8lzKJBfLPqizerFJ1Xkj">
+<!-- Decorative Element -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary rounded-full opacity-20 blur-3xl"></div>
+</div>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-primary-fixed to-transparent opacity-30 -z-10"></div>
+</section>
+<!-- Trusted By Section -->
+<section class="py-16 bg-surface border-y border-surface-container-high">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-title-lg text-title-lg text-on-surface-variant mb-8">Trusted by leading companies to find exceptional talent</h2>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<!-- Placeholder logos -->
+<div class="flex items-center gap-2 font-bold text-xl"><span class="material-symbols-outlined text-3xl">api</span> TechCorp</div>
+<div class="flex items-center gap-2 font-bold text-xl"><span class="material-symbols-outlined text-3xl">language</span> GlobalNet</div>
+<div class="flex items-center gap-2 font-bold text-xl"><span class="material-symbols-outlined text-3xl">trending_up</span> InnovateFinance</div>
+<div class="flex items-center gap-2 font-bold text-xl"><span class="material-symbols-outlined text-3xl">eco</span> GreenEnergy</div>
+<div class="flex items-center gap-2 font-bold text-xl"><span class="material-symbols-outlined text-3xl">architecture</span> BuildIt</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Manage your Entire Internship Process</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Everything you need to find, evaluate, and hire the perfect candidate, integrated into a single, intuitive dashboard.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1: Large Card -->
+<div class="md:col-span-2 bg-surface-container-low p-8 rounded-2xl flex flex-col md:flex-row items-center gap-8 border border-surface-container-highest hover:shadow-lg transition-shadow">
+<div class="flex-1">
+<div class="w-12 h-12 bg-primary-fixed text-primary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined icon-fill text-2xl">work</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Effortless Posting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Create and publish internship listings in minutes. Specify skills, duration, and stipends to attract the right students immediately.</p>
+<a class="font-label-md text-label-md text-primary-container font-bold flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="flex-1 w-full h-48 bg-surface rounded-xl overflow-hidden border border-surface-container-highest relative">
+<img class="w-full h-full object-cover object-left-top opacity-80" data-alt="A clean, modern user interface dashboard showing an 'Add Internship' form with fields for title, skills, and duration. Designed with white space, orange accents, and a corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdaDl2DPSm15ruuKEDqE6GXytCy9xV5a5K1QLts8bjsjjSwbfXVWs4h2hlTDC-Jp8Zbr51BvTIf0EYQgzdP9rpRgwH6OC0oIn_2xN9xx6rQnsHgV6EqukYQnrBbEozIw0YRHNvbd7bXmGyrqbgvfirJSxyDLm0CyCMJqd_jFGjWlIK8uj0_eemtId-sCc7eVS-rZ6waQpBWLkHrYmkLqZDJO5MK1OSICaK-pNaseWbJ6EEPr22FvrQ">
+</div>
+</div>
+<!-- Feature 2: Small Card -->
+<div class="bg-secondary-fixed p-8 rounded-2xl border border-secondary-fixed-dim hover:shadow-lg transition-shadow flex flex-col">
+<div class="w-12 h-12 bg-white text-secondary rounded-xl flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined icon-fill text-2xl">group</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-secondary-fixed mb-3">Applicant Tracking</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mb-6 flex-grow">Review resumes, portfolios, and academic records in one unified view. Move candidates through your custom pipeline.</p>
+</div>
+<!-- Feature 3: Small Card -->
+<div class="bg-primary-container p-8 rounded-2xl border border-primary-container hover:shadow-lg transition-shadow flex flex-col text-white">
+<div class="w-12 h-12 bg-white/20 text-white rounded-xl flex items-center justify-center mb-6 backdrop-blur-sm">
+<span class="material-symbols-outlined icon-fill text-2xl">event_available</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-3">Interview Scheduling</h3>
+<p class="font-body-md text-body-md text-primary-fixed mb-6 flex-grow">Coordinate interviews seamlessly with built-in calendar integrations. No more back-and-forth emails.</p>
+</div>
+<!-- Feature 4: Large Card -->
+<div class="md:col-span-2 bg-surface-container-low p-8 rounded-2xl border border-surface-container-highest hover:shadow-lg transition-shadow flex flex-col md:flex-row-reverse items-center gap-8">
+<div class="flex-1">
+<div class="w-12 h-12 bg-tertiary-fixed text-tertiary rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined icon-fill text-2xl">insights</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Data-Driven Hiring</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Analyze applicant skills against your requirements. Make informed decisions based on structured academic data provided directly by Raisoni.</p>
+<a class="font-label-md text-label-md text-primary-container font-bold flex items-center gap-1 hover:underline" href="#">Explore analytics <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="flex-1 w-full h-48 bg-surface rounded-xl overflow-hidden border border-surface-container-highest">
+<img class="w-full h-full object-cover opacity-80" data-alt="Abstract visualization of data analytics graphs and charts in a sleek, modern dashboard setting. Soft white background with vibrant purple and orange data points and lines. Corporate modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqL9W6sf6R-vp-ugAGYqkp1gAK7UCbkK0tykCyFHDmItg4qh2xqry8CXJSV8k_l_wwZrV3e3MuUZ_RQNg1EeXYutvm8QKI7glLV8sYg9-e0tOfrbYSc9CKGw2AhXktNvH1h_F-U5H_Kp0XjOSFDWWEqWl57DNod7P9fF-VOrWvgje_FFwZ6Jri9-lYb3dQpBRjco_KKWCPUqb1J6pyRoshT7kcnFb3y_YZ-dUJdix9xM1-VIDDaJWs">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (High Contrast) -->
+<section class="py-20 bg-secondary text-white relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-4">Connecting Potential with Opportunity</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed mb-8">Join hundreds of companies who have successfully built their talent pipelines through the Raisoni Portal.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary-fixed">
+<span class="material-symbols-outlined icon-fill text-3xl">school</span>
+<span class="font-display-lg text-display-lg text-white">5k+</span>
+</div>
+<p class="font-label-md text-label-md text-secondary-fixed">Active Students</p>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary-fixed">
+<span class="material-symbols-outlined icon-fill text-3xl">business</span>
+<span class="font-display-lg text-display-lg text-white">200+</span>
+</div>
+<p class="font-label-md text-label-md text-secondary-fixed">Partner Companies</p>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary-fixed">
+<span class="material-symbols-outlined icon-fill text-3xl">handshake</span>
+<span class="font-display-lg text-display-lg text-white">1.2k</span>
+</div>
+<p class="font-label-md text-label-md text-secondary-fixed">Internships Filled</p>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary-fixed">
+<span class="material-symbols-outlined icon-fill text-3xl">star</span>
+<span class="font-display-lg text-display-lg text-white">98%</span>
+</div>
+<p class="font-label-md text-label-md text-secondary-fixed">Satisfaction Rate</p>
+</div>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-surface-container-high py-section-gap mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="col-span-1 md:col-span-1">
+<a class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2 mb-4" href="#">
+<span class="material-symbols-outlined text-primary-container text-2xl icon-fill">school</span>
+                    Raisoni
+                </a>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Empowering students and connecting them with top industry leaders for a brighter future.</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Copyright © 2024 G.H. Raisoni College. All rights reserved.</p>
+</div>
+<!-- Links 1 -->
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-4">Platform</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">For Companies</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">For Students</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">For Institutes</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Pricing</a></li>
+</ul>
+</div>
+<!-- Links 2 -->
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-4">Company</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Blog</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a></li>
+</ul>
+</div>
+<!-- Links 3 -->
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-4">Legal</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+        // Simple nav shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+
+</body></html>

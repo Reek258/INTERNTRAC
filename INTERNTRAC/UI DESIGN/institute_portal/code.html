@@ -1,0 +1,438 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Institute Dashboard - Raisoni Portal</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#6b33dc",
+                      "on-tertiary-container": "#383838",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e0e3e6",
+                      "primary-fixed": "#ffdbc8",
+                      "primary-container": "#fd7e14",
+                      "outline": "#8b7264",
+                      "surface": "#f7f9fc",
+                      "tertiary-container": "#a2a1a1",
+                      "on-primary-fixed": "#321300",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#5509c6",
+                      "surface-variant": "#e0e3e6",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#f7f9fc",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed": "#23005c",
+                      "surface-bright": "#f7f9fc",
+                      "surface-tint": "#984700",
+                      "inverse-on-surface": "#eff1f4",
+                      "on-background": "#191c1e",
+                      "tertiary-fixed": "#e4e2e2",
+                      "surface-container": "#eceef1",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-low": "#f2f4f7",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "on-secondary-container": "#fffbff",
+                      "primary": "#984700",
+                      "on-surface-variant": "#574236",
+                      "secondary-container": "#8552f6",
+                      "inverse-primary": "#ffb68a",
+                      "tertiary-fixed-dim": "#c8c6c6",
+                      "on-surface": "#191c1e",
+                      "on-primary-container": "#5e2900",
+                      "inverse-surface": "#2d3133",
+                      "secondary-fixed": "#e9ddff",
+                      "surface-dim": "#d8dadd",
+                      "primary-fixed-dim": "#ffb68a",
+                      "tertiary": "#5e5e5e",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#d0bcff",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#dfc0b0",
+                      "surface-container-high": "#e6e8eb",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "on-primary-fixed-variant": "#743500"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "stack-lg": "24px",
+                      "stack-sm": "8px",
+                      "section-gap": "96px",
+                      "stack-md": "16px",
+                      "container-max": "1200px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "title-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Minimal custom CSS for things Tailwind config can't easily handle inline without bloat */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar Shared Component -->
+<header class="bg-surface sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand Logo -->
+<div class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 32px;">school</span>
+                Raisoni Portal
+            </div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Students</a>
+<!-- Active Link based on intent "Institute landing page" -->
+<a class="text-primary border-b-2 border-primary font-bold font-label-md text-label-md py-2" href="#">Institutes</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Companies</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Mentor</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="font-label-md text-label-md text-primary hover:text-on-primary-container transition-colors scale-95 duration-150 transition-all">Login</button>
+<button class="bg-primary-container text-white px-6 py-2 rounded font-label-md text-label-md hover:bg-on-primary-container transition-colors scale-95 duration-150 transition-all shadow-sm">Sign up</button>
+</div>
+</div>
+</header>
+<!-- Main Dashboard Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap space-y-section-gap">
+<!-- Dashboard Header Area -->
+<section class="flex flex-col md:flex-row justify-between items-start md:items-end gap-stack-md">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-2">Institute Overview</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Manage placements, track partners, and monitor student success.</p>
+</div>
+<div class="flex gap-4">
+<button class="border border-outline-variant text-on-surface bg-surface-container-lowest px-4 py-2 rounded font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-xl">download</span>
+                    Export Report
+                </button>
+<button class="bg-secondary text-white px-4 py-2 rounded font-label-md text-label-md flex items-center gap-2 hover:bg-secondary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-xl">add</span>
+                    New Posting
+                </button>
+</div>
+</section>
+<!-- Stats Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<!-- Stat Card 1: Neutral -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<span class="text-secondary font-label-md text-label-md flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span> +12%</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Total Eligible Students</p>
+<p class="font-display-lg text-display-lg text-on-background">1,248</p>
+</div>
+</div>
+<!-- Stat Card 2: Primary High Impact -->
+<div class="bg-primary-container rounded-xl p-6 flex flex-col justify-between shadow-sm text-white relative overflow-hidden">
+<!-- Decorative element -->
+<div class="absolute -right-6 -top-6 w-32 h-32 bg-white opacity-10 rounded-full"></div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white backdrop-blur-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">work</span>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-label-md text-label-md text-white/80 mb-1">Students Placed</p>
+<p class="font-display-lg text-display-lg text-white">856</p>
+</div>
+</div>
+<!-- Stat Card 3: Secondary High Impact -->
+<div class="bg-secondary-container rounded-xl p-6 flex flex-col justify-between shadow-sm text-white relative overflow-hidden">
+<!-- Decorative element -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-black opacity-10 rounded-full"></div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<div class="w-12 h-12 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">domain</span>
+</div>
+<span class="text-white/80 font-label-md text-label-md">Active</span>
+</div>
+<div class="relative z-10">
+<p class="font-label-md text-label-md text-white/80 mb-1">Partner Companies</p>
+<p class="font-display-lg text-display-lg text-white">142</p>
+</div>
+</div>
+</section>
+<!-- Main Content 2-Column Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-stack-lg">
+<!-- Left Column: Recent Placements Table (Span 2) -->
+<div class="lg:col-span-2 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="p-6 border-b border-outline-variant flex justify-between items-center bg-surface-bright">
+<h2 class="font-title-lg text-title-lg text-on-background">Recent Placements</h2>
+<a class="font-label-md text-label-md text-primary hover:text-on-primary-container transition-colors" href="#">View All</a>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-medium">Student Name</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-medium">Department</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-medium">Company</th>
+<th class="py-4 px-6 font-label-md text-label-md text-on-surface-variant font-medium">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<tr class="hover:bg-surface transition-colors">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary text-xs font-bold">AS</div>
+<span class="font-body-md text-body-md text-on-background font-medium">Arjun Sharma</span>
+</div>
+</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-surface-variant">Computer Science</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-background">TechCorp India</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#E8F5E9] text-[#2E7D32]">Offer Accepted</span>
+</td>
+</tr>
+<tr class="hover:bg-surface transition-colors">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary text-xs font-bold">PK</div>
+<span class="font-body-md text-body-md text-on-background font-medium">Priya Kumar</span>
+</div>
+</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-surface-variant">Information Tech</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-background">DataSys</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#FFF3E0] text-[#E65100]">Interviewing</span>
+</td>
+</tr>
+<tr class="hover:bg-surface transition-colors">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant text-xs font-bold">RJ</div>
+<span class="font-body-md text-body-md text-on-background font-medium">Rahul Joshi</span>
+</div>
+</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-surface-variant">Electronics</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-background">ElectroMotive</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#E8F5E9] text-[#2E7D32]">Offer Accepted</span>
+</td>
+</tr>
+<tr class="hover:bg-surface transition-colors">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary text-xs font-bold">SM</div>
+<span class="font-body-md text-body-md text-on-background font-medium">Sneha Mishra</span>
+</div>
+</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-surface-variant">Computer Science</td>
+<td class="py-4 px-6 font-body-md text-body-md text-on-background">InnovateLLC</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#E3F2FD] text-[#1565C0]">Onboarding</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Right Column: Top Partners -->
+<div class="lg:col-span-1 flex flex-col gap-stack-lg">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<h2 class="font-title-lg text-title-lg text-on-background mb-4">Top Hiring Partners</h2>
+<div class="space-y-4">
+<!-- Partner Item -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface transition-colors cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">business</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background font-medium">TechCorp India</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">45 Hires this year</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-sm">chevron_right</span>
+</div>
+<!-- Partner Item -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface transition-colors cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">apartment</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background font-medium">InnovateLLC</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">32 Hires this year</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-sm">chevron_right</span>
+</div>
+<!-- Partner Item -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface transition-colors cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">corporate_fare</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background font-medium">DataSys</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">28 Hires this year</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-sm">chevron_right</span>
+</div>
+</div>
+<button class="w-full mt-4 py-2 border border-outline-variant text-on-surface bg-transparent rounded font-label-md text-label-md hover:bg-surface transition-colors">View All Partners</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest mt-auto border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-gutter max-w-container-max mx-auto py-section-gap">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 32px;">school</span>
+                    Raisoni Portal
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">Copyright © 2024 G.H. Raisoni College. All rights reserved.</p>
+</div>
+<!-- Links Group 1 -->
+<div class="flex flex-col gap-2">
+<p class="font-label-md text-label-md font-bold text-on-background mb-2">Platform</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Blog</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Pricing</a>
+</div>
+<!-- Links Group 2 -->
+<div class="flex flex-col gap-2">
+<p class="font-label-md text-label-md font-bold text-on-background mb-2">Support</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+</div>
+<!-- Newsletter / CTA -->
+<div class="flex flex-col gap-2">
+<p class="font-label-md text-label-md font-bold text-on-background mb-2">Stay Updated</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Get the latest news and updates.</p>
+<div class="flex">
+<input class="w-full border border-outline-variant rounded-l px-3 py-2 font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Email address" type="email">
+<button class="bg-primary-container text-white px-4 py-2 rounded-r font-label-md text-label-md hover:bg-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,2028 @@
+{
+    "users": [
+        {
+            "id": "df8b5b92-e23f-4d49-bf61-b24ff1c6c9aa",
+            "email": "ghribmjal@raisoni.edu",
+            "password_hash": "$2b$12$4rIXjgGpmiQuul6IQiW4QuO2fa0aOWvHWhPntsHvlUELjPBgFLwpu",
+            "role": "INSTITUTE",
+            "created_at": "2026-08-20T07:43:00.234368"
+        },
+        {
+            "id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "email": "borseraj072@gmail.com",
+            "password_hash": "$2b$12$AMCgR5qF7N36wltANQ5VWOSTSzr0O9n8AJ7ax6g17xR34PwRgVuoa",
+            "role": "STUDENT",
+            "created_at": "2026-08-20T08:03:13.562657"
+        },
+        {
+            "id": "322affd5-cc5d-4d1a-ae85-2d3968cc0db9",
+            "email": "gp729055@gmail.com",
+            "password_hash": "$2b$12$ZQMKPflRimBwkL2TgSihaOf2pwfTPxTZSvM8xYSUMpIO0MraibD2a",
+            "role": "STUDENT",
+            "created_at": "2026-08-20T08:09:27.698324"
+        },
+        {
+            "id": "0faa224a-8ea5-4a6f-94a0-880d63ab0eaf",
+            "email": "ethara.@ai.in",
+            "password_hash": "$2b$12$AkaKaG7LPFZwJjsy.j41eem0mP/VbI/X8gWe1MJTKQTP.N.6XM3VC",
+            "role": "COMPANY",
+            "created_at": "2026-08-20T08:18:44.150412"
+        },
+        {
+            "id": "1b91064a-1d11-4d0e-9819-4659b17bc713",
+            "email": "gcoe1999@edu.in",
+            "password_hash": "$2b$12$Ma/cBgV5l5Ik6hJSDm.R9O9N3YGunOPnVlsagTLmqidkjz8IrZoia",
+            "role": "INSTITUTE",
+            "created_at": "2026-08-20T09:23:09.549592"
+        },
+        {
+            "id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "email": "dinkkyshadani@gmail.com",
+            "password_hash": "$2b$12$Ljo7MSxHGsTAA0NFKZlrI.UQOY7oSJRkcuG.sjqYrvOfGvXICnxna",
+            "role": "STUDENT",
+            "created_at": "2026-08-20T09:24:38.329596"
+        },
+        {
+            "id": "ab8ffd3e-e5b1-42bc-ac95-6ce151099039",
+            "email": "priya.sharma@ghrce.edu.in",
+            "role": "INSTITUTE",
+            "password_hash": "$2b$12$HKQ4dg6pZ0VtLBrATx4OqOaeX0N12TlmWo4JGYFqlsmjIKZCorBPy",
+            "created_at": "2026-08-20T16:58:34.717005"
+        },
+        {
+            "id": "f3f97efa-1a5e-422d-ab9b-f4b1afbc1554",
+            "email": "rahul.verma@ghrce.edu.in",
+            "role": "INSTITUTE",
+            "password_hash": "$2b$12$ktT13Zd8iODEcdC0N0bdsO0qhCIhBRzNzo7QUjBz1.WxMllvimGUK",
+            "created_at": "2026-08-20T16:58:34.918825"
+        },
+        {
+            "id": "0eef1b67-4689-48e9-a566-aa70f82b5b36",
+            "email": "sneha.patil@ghrce.edu.in",
+            "role": "INSTITUTE",
+            "password_hash": "$2b$12$gEjewTp7pfJ6B30TqV2PcOVMxsm0i96O27ijXylRtVpfn7LNd.ory",
+            "created_at": "2026-08-20T16:58:35.121214"
+        },
+        {
+            "id": "6c5bedb5-7c11-40d6-94b5-e570946e4cd3",
+            "email": "amit.joshi@gcce.edu.in",
+            "role": "INSTITUTE",
+            "password_hash": "$2b$12$l/1S9b4hUigmv/rg3HvQsOjd/FqF.2sKsrzbsG/ZNx9ANoGNDi6k2",
+            "created_at": "2026-08-20T16:58:35.330677"
+        },
+        {
+            "id": "a1d5eb28-2eb4-4def-9eda-32f3d9c8d39a",
+            "email": "kavita.deshmukh@gcce.edu.in",
+            "role": "INSTITUTE",
+            "password_hash": "$2b$12$/GLU0IQ75aCJGxsh6R5dseAk1i060CK3ayCRJchioW2USdm7etNk.",
+            "created_at": "2026-08-20T16:58:35.539267"
+        },
+        {
+            "id": "50e5e750-e0f0-4405-8b64-8f1bf47b72bb",
+            "email": "ananya.reddy@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$xzEmx.bzdH7RFaaEvzIuCegWTNOZ1e2H70iD2rVOE1WeubFk/Gf/i",
+            "created_at": "2026-08-20T16:58:35.743778"
+        },
+        {
+            "id": "42f5517d-d2c7-415b-9ff9-725c791c39d3",
+            "email": "rohan.gupta@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$DEp4Bi7QGncKLp.CGKExPOQeNb2Ucsab6FuYNbhGmnLTgRoE8/qfy",
+            "created_at": "2026-08-20T16:58:35.946073"
+        },
+        {
+            "id": "d07a02e0-48cd-437c-84e3-cbc38f15d5aa",
+            "email": "meera.joshi@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$QMPC4P7gv3IbhasFTgWdbed739nqJJ2ag654ZQ.UN3UoNKFtYXCq2",
+            "created_at": "2026-08-20T16:58:36.149210"
+        },
+        {
+            "id": "056422a5-3258-413b-99cf-2591b22f3ba8",
+            "email": "arjun.nair@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$uFNulqYWbs0FJNLXImfx8uM3U2C.gepa8T05IH6Sx6N1jQ3szmoBC",
+            "created_at": "2026-08-20T16:58:36.351314"
+        },
+        {
+            "id": "42c37685-a660-4545-9e11-24381c9f9452",
+            "email": "priyanka.singh@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$.IdS.TIVwBcKAjks6D3PneMSohMWM0jmu1PTITau0yqbllweYRvMO",
+            "created_at": "2026-08-20T16:58:36.555787"
+        },
+        {
+            "id": "94d4affb-10a2-4b98-8e7d-3cdbac2a8530",
+            "email": "vikram.more@student.gcce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$932upRTNNOK6vBGp0PWeROiFe70b1tjtjCsuM5DcTsq/Ko2oHcE2i",
+            "created_at": "2026-08-20T16:58:36.760139"
+        },
+        {
+            "id": "b323f30e-40bf-4a3b-bb7f-7b80456d0e5a",
+            "email": "nehavk@gcce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$s7NomgkEka3SEgMPEhTdmuJANFblqBqT7RcqsbliLKxOHbzN/GHCa",
+            "created_at": "2026-08-20T16:58:36.965239"
+        },
+        {
+            "id": "273bda6a-8baa-4816-8055-7e397c2ef606",
+            "email": "saurabh.pawar@gcce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$NEfsp0d949iFAyk2HxCTDubIFXaiLsoVvzpPJIWWhice0ovaZDeEq",
+            "created_at": "2026-08-20T16:58:37.169291"
+        },
+        {
+            "id": "3f070291-136f-46d3-a412-402d25876442",
+            "email": "divya.kulkarni@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$WWTFiP4D3M2qDqHXD.kMQucyCS0SjGsRcI9ukHhrhsfL6JCLdRhmS",
+            "created_at": "2026-08-20T16:58:37.371898"
+        },
+        {
+            "id": "eeda90af-63c0-40df-bae3-fddb90b7bd88",
+            "email": "akash.thakur@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$xk0LJC/qqp0ezE22hTk8OuU1fCptuGPfbCfXJfn6Cq7Q9aRQZom5m",
+            "created_at": "2026-08-20T16:58:37.580227"
+        },
+        {
+            "id": "96bb09b8-ff5b-4409-a1d2-4a0cfd497665",
+            "email": "tanvi.bhatt@gcce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$tbQ5CfggLkOMU/ny4AQfXeWbgMaYPsYn8Nq8L704X1FWW5/IAJrty",
+            "created_at": "2026-08-20T16:58:37.786050"
+        },
+        {
+            "id": "6124408b-8280-43d0-91c1-370941102a07",
+            "email": "karan.desai@student.ghrce.edu.in",
+            "role": "STUDENT",
+            "password_hash": "$2b$12$B0p1.YOpF/kM1t4GHgRUVeYxKNhSrzIQREhhJvKUxRMVO7kKi5zj6",
+            "created_at": "2026-08-20T16:58:37.990417"
+        },
+        {
+            "id": "923dcf51-3581-422d-8332-84dd5510b7ed",
+            "email": "logintest.student@example.com",
+            "password_hash": "$2b$12$OKkqvVTj2Cf7drgd8.8.POf9cXEB/QVnyA/CORHv.SX9CZ4WtoY1q",
+            "role": "STUDENT",
+            "created_at": "2026-08-21T03:58:26.319935"
+        },
+        {
+            "id": "008a2e2e-f832-4592-8ecf-bf7d059a62d5",
+            "email": "logintest.company@example.com",
+            "password_hash": "$2b$12$rDqO8TNxTLSkHn9ZkFtufeyR64frOj.Fqrj3RCwp1FGZn9J.2KIq.",
+            "role": "COMPANY",
+            "created_at": "2026-08-21T03:58:27.012343"
+        },
+        {
+            "id": "ecd24d5d-cf66-49d5-b0f3-aeda4988604c",
+            "email": "premborse101@gmail.com",
+            "password_hash": "$2b$12$5K6QsNzzGP8h8OxY6O1g8u2kWylsEZ4BINKax6eOcUZ8AwHOVAUA.",
+            "role": "STUDENT",
+            "created_at": "2026-08-21T05:14:55.559810"
+        },
+        {
+            "id": "787efa31-6a0c-433a-bcb5-63f66d23e4c5",
+            "email": "recuite@swiggy.in",
+            "password_hash": "$2b$12$HTKL./OQ4a.CVZoyFJQpNOaZfJatLVEcrBs6n/GGsG0tlqZLLWsJ.",
+            "role": "COMPANY",
+            "created_at": "2026-08-21T05:57:53.172701"
+        }
+    ],
+    "institute_profiles": [
+        {
+            "id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "user_id": "df8b5b92-e23f-4d49-bf61-b24ff1c6c9aa",
+            "name": "G.H RAISONI COLLEGE AND MANAGEMENT",
+            "location": "JALGOAN",
+            "domain": "https://ghrcemj.raisoni.net/",
+            "institute_role": "TPO"
+        },
+        {
+            "id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "user_id": "1b91064a-1d11-4d0e-9819-4659b17bc713",
+            "name": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN",
+            "location": "JALGOAN",
+            "domain": "https://www.gfgcoe.ac.in/",
+            "institute_role": "TPO",
+            "profile_picture": "./uploads/profile-pictures/aa03e465-0786-4e34-a4fc-770ebc69c4ff_logo.webp"
+        },
+        {
+            "id": "5f4ab951-57dd-4631-a16d-e8ada22f779b",
+            "user_id": "ab8ffd3e-e5b1-42bc-ac95-6ce151099039",
+            "name": "Prof. Priya Sharma",
+            "location": "Jalgaon",
+            "domain": "https://ghrcemj.raisoni.net/",
+            "institute_role": "FACULTY_MENTOR",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43"
+        },
+        {
+            "id": "11cf93cf-7ed5-4e35-b20f-0ee04df15254",
+            "user_id": "f3f97efa-1a5e-422d-ab9b-f4b1afbc1554",
+            "name": "Prof. Rahul Verma",
+            "location": "Jalgaon",
+            "domain": "https://ghrcemj.raisoni.net/",
+            "institute_role": "FACULTY_MENTOR",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43"
+        },
+        {
+            "id": "5706f960-04b8-42f5-9fe0-558523449178",
+            "user_id": "0eef1b67-4689-48e9-a566-aa70f82b5b36",
+            "name": "Prof. Sneha Patil",
+            "location": "Jalgaon",
+            "domain": "https://ghrcemj.raisoni.net/",
+            "institute_role": "FACULTY_MENTOR",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43"
+        },
+        {
+            "id": "93e58469-00dc-4bd1-af1b-a38669e0717e",
+            "user_id": "6c5bedb5-7c11-40d6-94b5-e570946e4cd3",
+            "name": "Prof. Amit Joshi",
+            "location": "Jalgaon",
+            "domain": "https://www.gfgcoe.ac.in/",
+            "institute_role": "FACULTY_MENTOR",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff"
+        },
+        {
+            "id": "4300b455-45d5-40f1-82a4-736c69bc1ee5",
+            "user_id": "a1d5eb28-2eb4-4def-9eda-32f3d9c8d39a",
+            "name": "Prof. Kavita Deshmukh",
+            "location": "Jalgaon",
+            "domain": "https://www.gfgcoe.ac.in/",
+            "institute_role": "FACULTY_MENTOR",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff"
+        }
+    ],
+    "student_profiles": [
+        {
+            "id": "4fb3bb41-0775-436e-8d29-c75ba65913b4",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "name": "Prem Borse",
+            "mobile": "7030201702",
+            "degree": "B.Tech",
+            "branch": "COMPUTER ENGINNERING",
+            "semester": "Year 4",
+            "cgpa": 7.2,
+            "graduation_year": 2025,
+            "github_url": "https://github.com/Reek258",
+            "linkedin_url": "https://www.linkedin.com/in/prem-borse-46a03b284/",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "Python",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "React.js",
+                "FastAPI",
+                "SQL",
+                "MongoDB",
+                "Azure",
+                "Git",
+                "GitHub",
+                "HTML",
+                "CSS",
+                "Tailwind CSS",
+                "C",
+                "Java",
+                "Go",
+                "REST API",
+                "Machine Learning",
+                "NLP",
+                "Pandas",
+                "NumPy",
+                "LLM Integration",
+                "AWS"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "resume_path": "./uploads/resumes/4fb3bb41-0775-436e-8d29-c75ba65913b4_RESUME.pdf",
+            "dob": "",
+            "gender": "",
+            "address": "Kawathi",
+            "portfolio_url": "",
+            "institute_name": "GHRCE Nagpur / Raisoni Group",
+            "profile_picture": "./uploads/profile-pictures/4fb3bb41-0775-436e-8d29-c75ba65913b4_profile.jpg"
+        },
+        {
+            "id": "0a7ebf68-88fd-4d55-837c-f0205a361387",
+            "user_id": "322affd5-cc5d-4d1a-ae85-2d3968cc0db9",
+            "name": "GAURAV PATIL",
+            "mobile": "7823866639",
+            "degree": "B.Tech",
+            "branch": "COMPUTER ENGINEERING",
+            "semester": "Year 4",
+            "cgpa": null,
+            "graduation_year": 2025,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [],
+            "certifications": [],
+            "approval_status": "APPROVED"
+        },
+        {
+            "id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "name": "Dinkky shadani",
+            "mobile": "7385875444",
+            "degree": "B.Tech",
+            "branch": "COMPUTER ENGINNERING",
+            "semester": "Year 4",
+            "cgpa": 8.6,
+            "graduation_year": 2027,
+            "github_url": "https://github.com/Dinkky",
+            "linkedin_url": "https://www.linkedin.com/in/dinkky-shadani-42a0532b2/",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "skills": [
+                "Python",
+                "React",
+                "React.js",
+                "Node.js",
+                "FastAPI",
+                "SQL",
+                "PostgreSQL",
+                "MongoDB",
+                "Git",
+                "GitHub",
+                "HTML",
+                "CSS",
+                "C",
+                "Go",
+                "REST API",
+                "Figma"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "resume_path": "./uploads/resumes/d6079ba4-2dcf-4d77-b6bf-0f17f5869862_DS_resume__2_.docx",
+            "mentor_name": "Prof.KIRAN BAVISKAR",
+            "profile_picture": "./uploads/profile-pictures/d6079ba4-2dcf-4d77-b6bf-0f17f5869862_profile.jpeg",
+            "dob": "",
+            "gender": "",
+            "address": "JALGOAN",
+            "portfolio_url": "",
+            "institute_name": "GHRCE Nagpur / Raisoni Group"
+        },
+        {
+            "id": "9d4cbe59-8ff9-4c46-974b-d7fc106e255e",
+            "user_id": "50e5e750-e0f0-4405-8b64-8f1bf47b72bb",
+            "name": "Ananya Reddy",
+            "mobile": "9876543210",
+            "degree": "B.Tech",
+            "branch": "Computer Science & Engineering",
+            "semester": "Year 4",
+            "cgpa": 8.9,
+            "graduation_year": 2026,
+            "github_url": "https://github.com/ananyareddy",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "Python",
+                "React",
+                "FastAPI",
+                "SQL",
+                "Machine Learning",
+                "TensorFlow"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT",
+            "mentor_name": "Prof. Priya Sharma"
+        },
+        {
+            "id": "ec9005cc-8fe0-4b6b-b3cb-35ae9642f78c",
+            "user_id": "42f5517d-d2c7-415b-9ff9-725c791c39d3",
+            "name": "Rohan Gupta",
+            "mobile": "9123456780",
+            "degree": "B.Tech",
+            "branch": "Electronics & Telecommunication",
+            "semester": "Year 4",
+            "cgpa": 8.2,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "Embedded C",
+                "VLSI",
+                "Python",
+                "MATLAB",
+                "Arduino",
+                "PCB Design"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT",
+            "mentor_name": "Prof. Rahul Verma"
+        },
+        {
+            "id": "07d25b77-7fba-4ad3-8158-f122c2025351",
+            "user_id": "d07a02e0-48cd-437c-84e3-cbc38f15d5aa",
+            "name": "Meera Joshi",
+            "mobile": "9988776655",
+            "degree": "B.Tech",
+            "branch": "Information Technology",
+            "semester": "Year 3",
+            "cgpa": 9.1,
+            "graduation_year": 2027,
+            "github_url": "https://github.com/meerajoshi",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "JavaScript",
+                "React",
+                "Node.js",
+                "MongoDB",
+                "TypeScript",
+                "Docker"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT",
+            "mentor_name": "Prof. Sneha Patil"
+        },
+        {
+            "id": "b90465a5-2597-487e-8464-2e64e2e8e9d2",
+            "user_id": "056422a5-3258-413b-99cf-2591b22f3ba8",
+            "name": "Arjun Nair",
+            "mobile": "9001234567",
+            "degree": "B.Tech",
+            "branch": "Mechanical Engineering",
+            "semester": "Year 4",
+            "cgpa": 7.8,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "AutoCAD",
+                "SolidWorks",
+                "ANSYS",
+                "MATLAB",
+                "GD&T",
+                "CNC Programming"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT"
+        },
+        {
+            "id": "0dd0ded4-5988-4563-a27b-b58704ba6752",
+            "user_id": "42c37685-a660-4545-9e11-24381c9f9452",
+            "name": "Priyanka Singh",
+            "mobile": "9871234560",
+            "degree": "B.Tech",
+            "branch": "Electrical Engineering",
+            "semester": "Year 4",
+            "cgpa": 8.5,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "MATLAB",
+                "Simulink",
+                "PLC Programming",
+                "Power Systems",
+                "AutoCAD Electrical",
+                "Python",
+                "TypeScript",
+                "React",
+                "FastAPI",
+                "AWS",
+                "Git",
+                "GitHub",
+                "C",
+                "Go",
+                "Rust",
+                "REST API"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT",
+            "resume_path": "./uploads/resumes/0dd0ded4-5988-4563-a27b-b58704ba6752_Prem_Borse_Cover_Letter_Sanas.pdf"
+        },
+        {
+            "id": "f9bf6b9b-ca5c-4656-b2f4-5c44629debd0",
+            "user_id": "94d4affb-10a2-4b98-8e7d-3cdbac2a8530",
+            "name": "Vikram More",
+            "mobile": "9765432108",
+            "degree": "B.Tech",
+            "branch": "Civil Engineering",
+            "semester": "Year 4",
+            "cgpa": 7.5,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "skills": [
+                "AutoCAD Civil 3D",
+                "STAAD.Pro",
+                "Revit",
+                "MS Project",
+                "Primavera"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN",
+            "mentor_name": "Prof. Amit Joshi"
+        },
+        {
+            "id": "c16ff1a7-afc9-4f2b-9cf6-3c4e2343f310",
+            "user_id": "b323f30e-40bf-4a3b-bb7f-7b80456d0e5a",
+            "name": "Neha Kulkarni",
+            "mobile": "9654321098",
+            "degree": "B.Tech",
+            "branch": "AI & Data Science",
+            "semester": "Year 3",
+            "cgpa": 9.3,
+            "graduation_year": 2027,
+            "github_url": "https://github.com/nehakulkarni",
+            "linkedin_url": "",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "PyTorch",
+                "SQL",
+                "Pandas",
+                "NLP",
+                "Scikit-learn"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN"
+        },
+        {
+            "id": "c7e5a2c4-fd04-495c-a57d-4ebcf5776770",
+            "user_id": "273bda6a-8baa-4816-8055-7e397c2ef606",
+            "name": "Saurabh Pawar",
+            "mobile": "9543210987",
+            "degree": "B.Tech",
+            "branch": "Mechatronics Engineering",
+            "semester": "Year 4",
+            "cgpa": 8.0,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "skills": [
+                "ROS",
+                "PLC",
+                "SCADA",
+                "Embedded C",
+                "Arduino",
+                "SolidWorks",
+                "Python"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN"
+        },
+        {
+            "id": "6c0ade0f-75bd-4b5f-8ee9-a4b31ec85571",
+            "user_id": "3f070291-136f-46d3-a412-402d25876442",
+            "name": "Divya Kulkarni",
+            "mobile": "9432109876",
+            "degree": "B.Tech",
+            "branch": "Chemical Engineering",
+            "semester": "Year 4",
+            "cgpa": 8.7,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "Aspen HYSYS",
+                "MATLAB",
+                "AutoCAD",
+                "Process Simulation",
+                "MS Excel"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT"
+        },
+        {
+            "id": "a33bb143-d880-48be-9389-787bbf3d465c",
+            "user_id": "eeda90af-63c0-40df-bae3-fddb90b7bd88",
+            "name": "Akash Thakur",
+            "mobile": "9321098765",
+            "degree": "B.Tech",
+            "branch": "Cyber Security",
+            "semester": "Year 3",
+            "cgpa": 8.4,
+            "graduation_year": 2027,
+            "github_url": "https://github.com/akashthakur",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "Networking",
+                "Linux",
+                "Wireshark",
+                "Python",
+                "Penetration Testing",
+                "SIEM"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT"
+        },
+        {
+            "id": "ab881887-ff43-4812-9255-12a63b936f66",
+            "user_id": "96bb09b8-ff5b-4409-a1d2-4a0cfd497665",
+            "name": "Tanvi Bhatt",
+            "mobile": "9210987654",
+            "degree": "B.Tech",
+            "branch": "Biotechnology",
+            "semester": "Year 4",
+            "cgpa": 9.0,
+            "graduation_year": 2026,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "skills": [
+                "Bioinformatics",
+                "Python",
+                "R",
+                "Cell Culture",
+                "HPLC",
+                "BLAST",
+                "React",
+                "React.js",
+                "Node.js",
+                "FastAPI",
+                "SQL",
+                "PostgreSQL",
+                "MongoDB",
+                "Git",
+                "GitHub",
+                "HTML",
+                "CSS",
+                "C",
+                "Go",
+                "REST API",
+                "Figma"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN",
+            "resume_path": "./uploads/resumes/ab881887-ff43-4812-9255-12a63b936f66_DS_resume__2_.docx"
+        },
+        {
+            "id": "94a83e7a-b914-4aaf-a8e7-f96cfc46f895",
+            "user_id": "6124408b-8280-43d0-91c1-370941102a07",
+            "name": "Karan Desai",
+            "mobile": "9109876543",
+            "degree": "B.Tech",
+            "branch": "Computer Science & Engineering",
+            "semester": "Year 3",
+            "cgpa": 8.8,
+            "graduation_year": 2027,
+            "github_url": "https://github.com/karand",
+            "linkedin_url": "",
+            "institute_id": "8a2ff344-9c09-4cd2-b3db-242e68682e43",
+            "skills": [
+                "Java",
+                "Spring Boot",
+                "React",
+                "MySQL",
+                "AWS",
+                "Kubernetes"
+            ],
+            "certifications": [],
+            "approval_status": "APPROVED",
+            "institute_name": "G.H RAISONI COLLEGE AND MANAGEMENT"
+        },
+        {
+            "id": "9edcc30d-0464-4ef2-b0ad-28130ffc7663",
+            "user_id": "923dcf51-3581-422d-8332-84dd5510b7ed",
+            "name": "Login Test",
+            "mobile": null,
+            "degree": "B.Tech",
+            "branch": "Computer Science",
+            "semester": "Year 4",
+            "cgpa": null,
+            "graduation_year": 2025,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": null,
+            "skills": [],
+            "certifications": [],
+            "approval_status": "PENDING"
+        },
+        {
+            "id": "7a0dd640-c28e-4471-8424-b4c6da77b406",
+            "user_id": "ecd24d5d-cf66-49d5-b0f3-aeda4988604c",
+            "name": "MAYUR DNYANESHWAR KOLI",
+            "mobile": "9130238463",
+            "degree": "B.Tech",
+            "branch": "Mechanical Engineering",
+            "semester": "Year 4",
+            "cgpa": null,
+            "graduation_year": 2025,
+            "github_url": "",
+            "linkedin_url": "",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "skills": [],
+            "certifications": [],
+            "approval_status": "PENDING",
+            "profile_picture": "./uploads/profile-pictures/7a0dd640-c28e-4471-8424-b4c6da77b406_profile.jpeg"
+        }
+    ],
+    "company_profiles": [
+        {
+            "id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "user_id": "0faa224a-8ea5-4a6f-94a0-880d63ab0eaf",
+            "name": "ETHARA AI",
+            "industry": "SOFTWARE AI",
+            "website": "https://www.ethara.ai/",
+            "cin": "U78965847MH87458",
+            "gstin": "27MHTG7896542588888L",
+            "verification_status": "APPROVED",
+            "verification_errors": [
+                "Website URL cannot be parsed.",
+                "CIN length is invalid (16 chars, expected exactly 21).",
+                "GSTIN length is invalid (20 chars, expected exactly 15)."
+            ],
+            "verification_confidence": 0.7,
+            "verification_risk_level": "HIGH",
+            "reviewed_by": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN",
+            "verified_at": "2026-08-21T04:42:29.539901",
+            "verification_details": {
+                "audit_trail": [
+                    {
+                        "action": "APPROVED",
+                        "reviewer": "G.H RAISONI COLLEGE AND MANAGEMENT",
+                        "timestamp": "2026-08-20T09:07:56.633850",
+                        "notes": "Status set to APPROVED"
+                    },
+                    {
+                        "action": "REJECTED",
+                        "reviewer": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN",
+                        "timestamp": "2026-08-21T04:42:20.999251",
+                        "notes": "DOCUMENTS NOT PROVIEDED"
+                    },
+                    {
+                        "action": "APPROVED",
+                        "reviewer": "GODAVARI COLLEGE OF ENGINEERING, JALGOAN",
+                        "timestamp": "2026-08-21T04:42:29.539912",
+                        "notes": "Status set to APPROVED"
+                    }
+                ],
+                "verified_matches": [
+                    "Company legal name 'ETHARA AI' recorded.",
+                    "Official email belongs to corporate domain @ai.in."
+                ],
+                "mismatches": [
+                    "Website URL cannot be parsed",
+                    "CIN length is invalid (16 chars, expected exactly 21)",
+                    "GSTIN length is invalid (20 chars, expected exactly 15)",
+                    "Official Email format invalid (ethara.@ai.in)",
+                    "No supporting document uploaded",
+                    "Website URL cannot be parsed.",
+                    "CIN length is invalid (16 chars, expected exactly 21).",
+                    "GSTIN length is invalid (20 chars, expected exactly 15)."
+                ],
+                "reasons": [
+                    "Multiple deterministic validation errors indicate falsified or incomplete corporate credentials",
+                    "Critical identifiers (CIN, GSTIN) do not meet statutory format requirements",
+                    "Official email domain does not match claimed website domain",
+                    "Absence of any uploaded verification document prevents independent confirmation",
+                    "High likelihood of non\u2011compliance with regulatory verification standards"
+                ],
+                "rejection_reason": "DOCUMENTS NOT PROVIEDED"
+            },
+            "verification_decision": "REJECT",
+            "profile_picture": "./uploads/profile-pictures/e03c9dae-8e13-4893-939a-cd3867fcfd1a_logo.jpg"
+        },
+        {
+            "id": "b2037d67-4f35-465d-b2fe-fca66d74437c",
+            "user_id": "008a2e2e-f832-4592-8ecf-bf7d059a62d5",
+            "name": "Login Test Co",
+            "industry": "IT",
+            "website": "https://logintest.example.com",
+            "cin": "",
+            "gstin": "",
+            "verification_status": "PENDING",
+            "verification_errors": [],
+            "verification_confidence": 0.0,
+            "verification_risk_level": "MEDIUM"
+        },
+        {
+            "id": "109521d1-e28b-4bc6-b894-7fa32ca3fe50",
+            "user_id": "787efa31-6a0c-433a-bcb5-63f66d23e4c5",
+            "name": "SWIGGY",
+            "industry": "DELEVERY APPLICATION- SOFTWARE",
+            "website": "https://www.swiggy.com/",
+            "cin": "L74110KA2013PLC09653",
+            "gstin": "29AAFCB7707D1ZQ",
+            "verification_status": "MANUAL_REVIEW",
+            "verification_errors": [
+                "Website URL cannot be parsed.",
+                "CIN length is invalid (20 chars, expected exactly 21).",
+                "Website URL cannot be parsed",
+                "CIN length invalid (20 chars, expected 21)",
+                "Official email not provided",
+                "No supporting documents uploaded",
+                "Website URL cannot be parsed.",
+                "CIN length is invalid (20 chars, expected exactly 21)."
+            ],
+            "verification_confidence": 0.45,
+            "verification_risk_level": "HIGH",
+            "profile_picture": "./uploads/profile-pictures/109521d1-e28b-4bc6-b894-7fa32ca3fe50_logo.webp"
+        }
+    ],
+    "internships": [
+        {
+            "id": "763a703b-59da-45b6-98e2-a882f6159363",
+            "title": "Full-Stack Software Engineer Intern",
+            "description": "Build next-generation continuous verification software for enterprise IT systems. You will work side-by-side with the founders scaling our FastAPI and React pipeline.",
+            "requirements": "FastAPI, PostgreSQL, React, Docker, familiarity with cloud services (AWS or GCP).",
+            "company_name": "DecentSecurity (W24)",
+            "source": "SCRAPED",
+            "scraped_from": "YC Startup Jobs",
+            "stipend": "$2,000 / mo",
+            "location": "Hybrid (San Francisco, CA)",
+            "status": "ACTIVE",
+            "created_at": "2026-08-20T08:56:10.293267"
+        },
+        {
+            "id": "1a83f7df-cbc7-48ba-8b72-bacc4662b7c2",
+            "title": "Software Engineering Intern",
+            "description": "Detailed Description:\nWe are looking for a motivated Software Engineering Intern to join our engineering team. You will work on building and improving web applications, developing frontend and backend features, integrating REST APIs and AI/LLM capabilities, and contributing to CI/CD workflows. Candidates should have strong problem-solving skills, a willingness to learn, and basic knowledge of modern web development.",
+            "requirements": "Detailed Description:\nWe are looking for a motivated Software Engineering Intern to join our engineering team. You will work on building and improving web applications, developing frontend and backend features, integrating REST APIs and AI/LLM capabilities, and contributing to CI/CD workflows. Candidates should have strong problem-solving skills, a willingness to learn, and basic knowledge of modern web development.",
+            "company_name": "ETHARA AI",
+            "company_profile_id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "eligible_institute_ids": [
+                "8a2ff344-9c09-4cd2-b3db-242e68682e43"
+            ],
+            "source": "INTERNAL",
+            "stipend": "\u20b915000/month",
+            "location": "Remote - Pune, Maharashtra",
+            "duration": "6 Months",
+            "required_skills": [
+                "React",
+                "Node.js",
+                "TypeScript",
+                "REST APIs",
+                "LLM."
+            ],
+            "vacancies": 16,
+            "deadline": null,
+            "status": "ACTIVE",
+            "created_at": "2026-08-20T09:17:47.024073"
+        },
+        {
+            "id": "38270e03-4996-41f8-a747-3d9cf37134a2",
+            "title": "Software Engineering Intern",
+            "description": "Detailed Description:\nWe are looking for a motivated Software Engineering Intern to join our engineering team. You will work on building and improving web applications, developing frontend and backend features, integrating REST APIs and AI/LLM capabilities, and contributing to CI/CD workflows. Candidates should have strong problem-solving skills, a willingness to learn, and basic knowledge of modern web development.",
+            "requirements": "Detailed Description:\nWe are looking for a motivated Software Engineering Intern to join our engineering team. You will work on building and improving web applications, developing frontend and backend features, integrating REST APIs and AI/LLM capabilities, and contributing to CI/CD workflows. Candidates should have strong problem-solving skills, a willingness to learn, and basic knowledge of modern web development.",
+            "company_name": "ETHARA AI",
+            "company_profile_id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "eligible_institute_ids": [
+                "aa03e465-0786-4e34-a4fc-770ebc69c4ff"
+            ],
+            "source": "INTERNAL",
+            "stipend": "\u20b915000/month",
+            "location": "Hybrid - Pune, Maharashtra",
+            "duration": "6 Months",
+            "required_skills": [
+                "React",
+                "Node.js",
+                "TypeScript",
+                "REST APIs"
+            ],
+            "vacancies": 11,
+            "deadline": "2026-08-25",
+            "status": "ACTIVE",
+            "created_at": "2026-08-20T09:27:48.713634"
+        },
+        {
+            "id": "b94689a1-6cfc-4f73-81f1-4025ddd8155f",
+            "title": "DevOps & SRE Intern",
+            "description": "Support our core infrastructure team by automating deployment pipelines, configuring monitoring alerts, and managing container orchestration.",
+            "requirements": "Git, Docker, Linux systems, basic Python or Go scripting, understanding of Kubernetes.",
+            "company_name": "Razorpay",
+            "source": "SCRAPED",
+            "scraped_from": "Unstop",
+            "stipend": "\u20b935,000 / mo",
+            "location": "Remote (India)",
+            "status": "ACTIVE",
+            "created_at": "2026-08-20T09:57:26.624213"
+        },
+        {
+            "id": "17302c56-e5f9-43ae-bbbe-4dd7c1e33636",
+            "title": "React Frontend Developer Intern",
+            "description": "Join our bioinformatics frontend team. Work on genome sequencing UI, translating complex dataset renders into smooth dashboard representations.",
+            "requirements": "Proficiency in React.js, Tailwind CSS, TypeScript, and basic understanding of State Management (Redux/Zustand).",
+            "company_name": "Helix BioTech",
+            "source": "SCRAPED",
+            "scraped_from": "Wellfound",
+            "stipend": "$1,200 - $1,800 / mo",
+            "location": "Remote (USA)",
+            "status": "ACTIVE",
+            "created_at": "2026-08-21T05:29:15.819666"
+        },
+        {
+            "id": "89b2ff54-b7f5-4585-8877-72b75fe43457",
+            "title": "YC Startup Internships",
+            "description": "Internship and early-career roles at Y Combinator-backed startups \u2014 engineering, AI research and product roles, many remote-friendly.",
+            "requirements": "Varies by role \u2014 see individual listings on YC's job board.",
+            "company_name": "Y Combinator Startups",
+            "source": "SCRAPED",
+            "scraped_from": "YC Startup Jobs",
+            "stipend": "$1,000 - $3,000 / mo",
+            "location": "San Francisco / Remote (Global)",
+            "link": "https://www.ycombinator.com/jobs",
+            "status": "ACTIVE",
+            "created_at": "2026-08-21T07:07:51.301709"
+        },
+        {
+            "id": "ad161365-2ae8-4b3a-9f6c-e4e0f14394bf",
+            "title": "Full Stack Product Engineer - Remote/US",
+            "description": "Live opening at a Y Combinator startup. Apply directly on YC's job board.",
+            "requirements": "See full requirements on the original listing.",
+            "company_name": "Jiga",
+            "source": "SCRAPED",
+            "scraped_from": "YC Startup Jobs",
+            "stipend": "See listing",
+            "location": "See listing",
+            "link": "https://www.ycombinator.com/companies/jiga/jobs/KMtdgpo-full-stack-product-engineer-remote-us",
+            "status": "ACTIVE",
+            "created_at": "2026-08-21T07:08:14.255166"
+        },
+        {
+            "id": "a0f8019d-63a2-4dfc-926d-67d6c61bf2f6",
+            "title": "Software Engineer Internship",
+            "description": "Rubrik Security Cloud is hiring Software Engineer Interns to work on zero-trust data security and enterprise-scale cloud products.",
+            "requirements": "Bachelor's or Master's in CS or related field. Proficiency in Java, C/C++, Scala or Python. CGPA 8+.",
+            "company_name": "Rubrik",
+            "source": "SCRAPED",
+            "scraped_from": "Unstop",
+            "stipend": "See listing",
+            "location": "Bangalore, India",
+            "link": "https://unstop.com/internships/software-engineer-internship-rubrik-1549119",
+            "status": "ACTIVE",
+            "created_at": "2026-08-21T08:55:52.479593"
+        }
+    ],
+    "applications": [
+        {
+            "id": "24612856-2884-43fd-a31e-278dab2b96de",
+            "student_id": "4fb3bb41-0775-436e-8d29-c75ba65913b4",
+            "internship_id": "763a703b-59da-45b6-98e2-a882f6159363",
+            "status": "SHORTLISTED_FOR_INTERVIEW",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-20T08:56:13.616432",
+                    "note": "Application submitted. Initial ATS Score: 70."
+                }
+            ],
+            "ats_score": 70,
+            "ai_verdict": {
+                "ats_score": 70,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "FastAPI",
+                    "React",
+                    "SQL",
+                    "REST API",
+                    "TypeScript",
+                    "Git"
+                ],
+                "missing_skills": [
+                    "Docker",
+                    "PostgreSQL",
+                    "AWS",
+                    "GCP"
+                ],
+                "strengths": [
+                    "Proven full\u2011stack development using FastAPI and React in client projects",
+                    "Hands\u2011on AI/ML integration experience with LLMs and APIs",
+                    "Delivered end\u2011to\u2011end products under tight deadlines and earned multiple awards",
+                    "Experience with cloud deployment on Azure and version control with Git"
+                ],
+                "improvements": [
+                    "Obtain practical Docker/containerization experience through personal or open\u2011source projects",
+                    "Build and showcase a project using PostgreSQL to strengthen relational DB expertise",
+                    "Gain familiarity with AWS or GCP services relevant to deployment and scaling",
+                    "Add quantifiable impact metrics (e.g., performance gains, user adoption) to resume entries"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 24,
+                    "experience_relevance": 20,
+                    "education": 12,
+                    "communication": 8,
+                    "domain_fit": 6
+                }
+            },
+            "applied_at": "2026-08-20T08:56:13.616448"
+        },
+        {
+            "id": "8d980fe7-8c91-4070-b6ad-0e434eed4799",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "internship_id": "38270e03-4996-41f8-a747-3d9cf37134a2",
+            "status": "OFFER_SENT",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-20T09:31:16.001645",
+                    "note": "Application submitted. Initial ATS Score: 78."
+                },
+                {
+                    "status": "INTERVIEW_SCHEDULED",
+                    "timestamp": "2026-08-20T09:32:31.448332",
+                    "note": "Interview scheduled on 2026-08-21 at 10:00 AM"
+                },
+                {
+                    "status": "OFFER_SENT",
+                    "timestamp": "2026-08-20T09:32:53.604256",
+                    "changed_from": "INTERVIEW_SCHEDULED",
+                    "note": "Hired candidate and sent offer letter."
+                }
+            ],
+            "ats_score": 78,
+            "ai_verdict": {
+                "ats_score": 78,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [
+                    "All 4 mandatory skills matched."
+                ],
+                "matched_skills": [
+                    "React",
+                    "Node.js",
+                    "REST API",
+                    "Git",
+                    "GitHub",
+                    "HTML",
+                    "CSS",
+                    "FastAPI",
+                    "PostgreSQL",
+                    "MongoDB"
+                ],
+                "missing_skills": [
+                    "TypeScript",
+                    "CI/CD workflows (GitHub Actions, Jenkins)",
+                    "AI/LLM integration depth",
+                    "Docker/Kubernetes",
+                    "Automated testing frameworks"
+                ],
+                "strengths": [
+                    "Hands\u2011on full\u2011stack development using React and FastAPI",
+                    "Proven problem\u2011solving and leadership in hackathon and competition wins",
+                    "Strong academic performance (8.5 CGPA in Computer Engineering)",
+                    "Experience designing and implementing RESTful APIs with database integration",
+                    "Familiarity with UI/UX design tools like Figma"
+                ],
+                "improvements": [
+                    "Add TypeScript to front\u2011end skill set and include it in personal projects",
+                    "Gain practical experience with CI/CD pipelines (e.g., GitHub Actions)",
+                    "Contribute to open\u2011source or personal projects that showcase deployment and testing practices",
+                    "Highlight any AI/LLM related work or pursue small projects to deepen that expertise"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 30,
+                    "experience_relevance": 20,
+                    "education": 12,
+                    "communication": 8,
+                    "domain_fit": 8
+                }
+            },
+            "applied_at": "2026-08-20T09:31:16.001659",
+            "interview_date": "2026-08-21",
+            "interview_time": "10:00 AM",
+            "interview_duration": "30 minutes",
+            "interview_link": "https://meet.google.com",
+            "interview_instructions": "",
+            "offer_letter_path": "./uploads/offer-letters/8d980fe7-8c91-4070-b6ad-0e434eed4799_offer_letter.pdf"
+        },
+        {
+            "id": "422f8741-6513-4840-be91-aa91960085f3",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "internship_id": "b94689a1-6cfc-4f73-81f1-4025ddd8155f",
+            "status": "APPLIED",
+            "status_history": [
+                {
+                    "status": "APPLIED",
+                    "timestamp": "2026-08-20T09:57:29.072654",
+                    "note": "Application submitted. Initial ATS Score: 43."
+                }
+            ],
+            "ats_score": 43,
+            "ai_verdict": {
+                "ats_score": 43,
+                "verdict": "PARTIALLY_ELIGIBLE",
+                "verdict_explanation": "You meet the academic requirements, but some preferred skills or relevant project depth are missing.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "Git",
+                    "Python",
+                    "Go"
+                ],
+                "missing_skills": [
+                    "Docker",
+                    "Kubernetes",
+                    "Linux systems",
+                    "Container orchestration",
+                    "Monitoring/alerting tools (e.g., Prometheus)",
+                    "CI/CD pipeline automation"
+                ],
+                "strengths": [
+                    "Proficient in Python and Go scripting",
+                    "Experience with Git version control and collaborative development",
+                    "Demonstrated leadership in full\u2011stack project delivery",
+                    "Strong academic record (CGPA 8.5)",
+                    "Effective communication and teamwork evidenced by competition wins"
+                ],
+                "improvements": [
+                    "Complete hands\u2011on Docker and Kubernetes tutorials and build a sample microservice deployment",
+                    "Learn Linux command\u2011line and basic system administration tasks",
+                    "Create CI/CD pipelines using GitHub Actions or Jenkins for personal projects",
+                    "Contribute to open\u2011source DevOps projects to gain real\u2011world monitoring and alerting experience"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 15,
+                    "experience_relevance": 5,
+                    "education": 10,
+                    "communication": 8,
+                    "domain_fit": 5
+                }
+            },
+            "applied_at": "2026-08-20T09:57:29.072723"
+        },
+        {
+            "id": "7d69088a-4f23-4819-8499-134afb160785",
+            "student_id": "4fb3bb41-0775-436e-8d29-c75ba65913b4",
+            "internship_id": "1a83f7df-cbc7-48ba-8b72-bacc4662b7c2",
+            "status": "OFFER_SENT",
+            "status_history": [
+                {
+                    "status": "APPLIED",
+                    "timestamp": "2026-08-20T15:17:36.556764",
+                    "note": "Application submitted. Initial ATS Score: 83."
+                },
+                {
+                    "status": "SHORTLISTED",
+                    "timestamp": "2026-08-21T03:58:19.223006",
+                    "changed_from": "APPLIED",
+                    "note": "Shortlisted by recruiter"
+                },
+                {
+                    "status": "INTERVIEW_SCHEDULED",
+                    "timestamp": "2026-08-21T11:21:04.766463",
+                    "note": "Interview scheduled on 2026-08-24 at 10:00 AM"
+                },
+                {
+                    "status": "OFFER_SENT",
+                    "timestamp": "2026-08-21T11:21:28.474341",
+                    "changed_from": "INTERVIEW_SCHEDULED",
+                    "note": "Hired candidate and sent offer letter."
+                }
+            ],
+            "ats_score": 83,
+            "ai_verdict": {
+                "ats_score": 83,
+                "verdict": "NOT_ELIGIBLE",
+                "verdict_explanation": "Deterministic criteria not met: Missing mandatory required skills: Node.js, LLM..",
+                "confidence": 0.88,
+                "deterministic_passed": false,
+                "deterministic_failures": [
+                    "Missing mandatory required skills: Node.js, LLM.."
+                ],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "React",
+                    "TypeScript",
+                    "REST APIs",
+                    "LLM"
+                ],
+                "missing_skills": [
+                    "Node.js",
+                    "CI/CD workflow experience (e.g., Jenkins, GitHub Actions)"
+                ],
+                "strengths": [
+                    "Delivered end\u2011to\u2011end full\u2011stack prototypes using React, TypeScript, and FastAPI",
+                    "Hands\u2011on LLM integration and fine\u2011tuning (Gemini API, Ethara AI)",
+                    "Award\u2011winning AI product development (MEDIASSIST AI, MEDBOT)",
+                    "Experience designing and consuming REST APIs with database integration"
+                ],
+                "improvements": [
+                    "Gain practical Node.js backend experience to cover the missing stack component",
+                    "Explicitly list CI/CD tools and pipelines used (GitHub Actions, Docker, etc.)",
+                    "Add quantitative impact metrics to projects (e.g., users served, performance gains)",
+                    "If possible, provide academic performance (GPA or rank) to strengthen education section"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 32,
+                    "experience_relevance": 22,
+                    "education": 12,
+                    "communication": 9,
+                    "domain_fit": 8
+                }
+            },
+            "applied_at": "2026-08-20T15:17:36.556782",
+            "interview_date": "2026-08-24",
+            "interview_time": "10:00 AM",
+            "interview_duration": "30 minutes",
+            "interview_link": "https://meet.google.com",
+            "interview_instructions": "",
+            "offer_letter_path": "./uploads/offer-letters/7d69088a-4f23-4819-8499-134afb160785_offer_letter.pdf"
+        },
+        {
+            "id": "a1fbafe9-6bca-4b0d-91ed-e3826de11a9d",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "internship_id": "763a703b-59da-45b6-98e2-a882f6159363",
+            "status": "SHORTLISTED_FOR_INTERVIEW",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-21T04:06:06.724809",
+                    "note": "Application submitted. Initial ATS Score: 76."
+                }
+            ],
+            "ats_score": 76,
+            "ai_verdict": {
+                "ats_score": 76,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "FastAPI",
+                    "PostgreSQL",
+                    "React",
+                    "REST API",
+                    "Python"
+                ],
+                "missing_skills": [
+                    "Docker",
+                    "AWS",
+                    "GCP",
+                    "Containerization",
+                    "Cloud deployment"
+                ],
+                "strengths": [
+                    "Hands\u2011on full\u2011stack development using FastAPI and React",
+                    "Led projects delivering functional prototypes on time",
+                    "Strong academic performance (8.5 CGPA) in Computer Engineering",
+                    "Experience building RESTful APIs with PostgreSQL",
+                    "Demonstrated teamwork and communication through awards"
+                ],
+                "improvements": [
+                    "Obtain hands\u2011on experience with Docker and container orchestration",
+                    "Complete a cloud fundamentals project or certification (AWS/GCP)",
+                    "Add quantifiable impact metrics to project descriptions",
+                    "Highlight any testing or CI/CD experience"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 28,
+                    "experience_relevance": 20,
+                    "education": 12,
+                    "communication": 8,
+                    "domain_fit": 8
+                }
+            },
+            "applied_at": "2026-08-21T04:06:06.724879"
+        },
+        {
+            "id": "22a63f8d-75ee-413a-9b71-5c59ac994573",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "internship_id": "17302c56-e5f9-43ae-bbbe-4dd7c1e33636",
+            "status": "SHORTLISTED_FOR_INTERVIEW",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-21T05:29:17.954893",
+                    "note": "Application submitted. Initial ATS Score: 60."
+                }
+            ],
+            "ats_score": 60,
+            "ai_verdict": {
+                "ats_score": 60,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "React.js",
+                    "HTML",
+                    "CSS",
+                    "Git",
+                    "GitHub",
+                    "Figma",
+                    "REST API"
+                ],
+                "missing_skills": [
+                    "Tailwind CSS",
+                    "TypeScript",
+                    "Redux/Zustand",
+                    "bioinformatics domain knowledge",
+                    "genome data visualization"
+                ],
+                "strengths": [
+                    "Proficient in React.js front\u2011end development",
+                    "Full\u2011stack experience with FastAPI and PostgreSQL",
+                    "Demonstrated project leadership and teamwork",
+                    "Strong academic record (B.Tech, CGPA 8.5)",
+                    "UI/UX design skills using Figma"
+                ],
+                "improvements": [
+                    "Complete online courses or tutorials on Tailwind CSS and TypeScript",
+                    "Build a small project using Redux or Zustand for state management",
+                    "Create a portfolio piece that visualizes bioinformatics or genomic data",
+                    "Contribute to open\u2011source React UI libraries to gain relevant experience"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 20,
+                    "experience_relevance": 15,
+                    "education": 12,
+                    "communication": 8,
+                    "domain_fit": 5
+                }
+            },
+            "applied_at": "2026-08-21T05:29:17.954944"
+        },
+        {
+            "id": "036e5f91-2b94-4ec1-89bc-163ef2e7fdce",
+            "student_id": "ab881887-ff43-4812-9255-12a63b936f66",
+            "internship_id": "38270e03-4996-41f8-a747-3d9cf37134a2",
+            "status": "SHORTLISTED_FOR_INTERVIEW",
+            "link": "",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-21T07:07:44.035763",
+                    "note": "Application submitted. Initial ATS Score: 78."
+                }
+            ],
+            "ats_score": 78,
+            "ai_verdict": {
+                "ats_score": 78,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [
+                    "All 4 mandatory skills matched."
+                ],
+                "matched_skills": [
+                    "React",
+                    "Node.js",
+                    "REST API",
+                    "FastAPI",
+                    "PostgreSQL",
+                    "MongoDB",
+                    "Git",
+                    "GitHub",
+                    "HTML",
+                    "CSS"
+                ],
+                "missing_skills": [
+                    "TypeScript",
+                    "CI/CD pipelines",
+                    "Node.js backend frameworks (e.g., Express)",
+                    "AI/LLM integration specifics"
+                ],
+                "strengths": [
+                    "Full\u2011stack development experience with React and FastAPI",
+                    "AI\u2011driven project experience (Mediassist AI)",
+                    "Strong problem\u2011solving and leadership demonstrated in competitions",
+                    "Solid academic record with 8.5 CGPA"
+                ],
+                "improvements": [
+                    "Gain hands\u2011on experience with TypeScript and integrate it into React/Node projects",
+                    "Learn and apply CI/CD tools such as GitHub Actions or Jenkins",
+                    "Familiarize with Node.js backend frameworks like Express to complement FastAPI experience",
+                    "Add measurable impact metrics to project descriptions"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 30,
+                    "experience_relevance": 20,
+                    "education": 12,
+                    "communication": 8,
+                    "domain_fit": 8
+                }
+            },
+            "applied_at": "2026-08-21T07:07:44.035869"
+        },
+        {
+            "id": "6080631c-69da-44f0-96e9-324a26686f86",
+            "student_id": "ab881887-ff43-4812-9255-12a63b936f66",
+            "internship_id": "89b2ff54-b7f5-4585-8877-72b75fe43457",
+            "status": "SHORTLISTED_FOR_INTERVIEW",
+            "link": "https://www.ycombinator.com/jobs",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-21T07:07:53.873092",
+                    "note": "Application submitted. Initial ATS Score: 82."
+                }
+            ],
+            "ats_score": 82,
+            "ai_verdict": {
+                "ats_score": 82,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "Python",
+                    "React",
+                    "FastAPI",
+                    "Node.js",
+                    "SQL",
+                    "PostgreSQL",
+                    "MongoDB",
+                    "Git",
+                    "GitHub",
+                    "REST API",
+                    "Figma",
+                    "AI",
+                    "Full\u2011stack development",
+                    "Product strategy"
+                ],
+                "missing_skills": [
+                    "Cloud platforms (AWS/GCP/Azure)",
+                    "Containerization (Docker/Kubernetes)",
+                    "Machine learning frameworks (TensorFlow, PyTorch)",
+                    "CI/CD pipelines",
+                    "Scalable architecture experience"
+                ],
+                "strengths": [
+                    "Full\u2011stack development expertise with React and FastAPI",
+                    "AI\u2011driven healthcare platform demonstrating product thinking",
+                    "Strong academic record (B.Tech, 8.5 CGPA)",
+                    "Leadership in hackathons and competition wins",
+                    "Proficiency in database design and API integration"
+                ],
+                "improvements": [
+                    "Add cloud and containerization experience (e.g., AWS, Docker)",
+                    "Learn and showcase ML libraries such as TensorFlow or PyTorch",
+                    "Contribute to open\u2011source projects to highlight code quality and collaboration",
+                    "Quantify project impact with metrics (e.g., users served, performance gains)"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 35,
+                    "experience_relevance": 18,
+                    "education": 12,
+                    "communication": 8,
+                    "domain_fit": 9
+                }
+            },
+            "applied_at": "2026-08-21T07:07:53.873142"
+        },
+        {
+            "id": "8f6683f7-1ba2-48d6-b188-458bc1922970",
+            "student_id": "ab881887-ff43-4812-9255-12a63b936f66",
+            "internship_id": "ad161365-2ae8-4b3a-9f6c-e4e0f14394bf",
+            "status": "SHORTLISTED_FOR_INTERVIEW",
+            "link": "https://www.ycombinator.com/companies/jiga/jobs/KMtdgpo-full-stack-product-engineer-remote-us",
+            "status_history": [
+                {
+                    "status": "SHORTLISTED_FOR_INTERVIEW",
+                    "timestamp": "2026-08-21T07:08:16.582587",
+                    "note": "Application submitted. Initial ATS Score: 69."
+                }
+            ],
+            "ats_score": 69,
+            "ai_verdict": {
+                "ats_score": 69,
+                "verdict": "ELIGIBLE",
+                "verdict_explanation": "You meet all mandatory eligibility requirements and have a strong profile match.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "React.js",
+                    "FastAPI",
+                    "Python",
+                    "SQL",
+                    "PostgreSQL",
+                    "MongoDB",
+                    "REST API",
+                    "Git",
+                    "GitHub",
+                    "HTML",
+                    "CSS",
+                    "Figma"
+                ],
+                "missing_skills": [
+                    "TypeScript",
+                    "Docker",
+                    "Kubernetes",
+                    "AWS/GCP/Azure",
+                    "CI/CD pipelines",
+                    "Testing frameworks (Jest, PyTest)",
+                    "Agile/Scrum experience",
+                    "Scalability and microservices design",
+                    "Monitoring/Observability tools"
+                ],
+                "strengths": [
+                    "Strong full\u2011stack development using React and FastAPI",
+                    "Proven product leadership in healthcare\u2011focused hackathon projects",
+                    "Solid academic background with high CGPA in Computer Engineering",
+                    "Experience building end\u2011to\u2011end web applications with role\u2011based access control",
+                    "Effective teamwork and communication demonstrated through awards"
+                ],
+                "improvements": [
+                    "Add cloud and containerization experience (e.g., AWS + Docker) to support production deployments",
+                    "Learn TypeScript and modern testing frameworks to improve code quality and reliability",
+                    "Gain exposure to Agile/Scrum processes or obtain related certification",
+                    "Contribute to an open\u2011source or internship project to demonstrate work at scale"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 30,
+                    "experience_relevance": 12,
+                    "education": 12,
+                    "communication": 7,
+                    "domain_fit": 8
+                }
+            },
+            "applied_at": "2026-08-21T07:08:16.582639"
+        },
+        {
+            "id": "139e23e2-fe7d-44aa-83b7-100f8e328006",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "internship_id": "a0f8019d-63a2-4dfc-926d-67d6c61bf2f6",
+            "status": "APPLIED",
+            "link": "https://unstop.com/internships/software-engineer-internship-rubrik-1549119",
+            "status_history": [
+                {
+                    "status": "APPLIED",
+                    "timestamp": "2026-08-21T08:55:56.093322",
+                    "note": "Application submitted. Initial ATS Score: 59."
+                }
+            ],
+            "ats_score": 59,
+            "ai_verdict": {
+                "ats_score": 59,
+                "verdict": "PARTIALLY_ELIGIBLE",
+                "verdict_explanation": "You meet the academic requirements, but some preferred skills or relevant project depth are missing.",
+                "confidence": 0.88,
+                "deterministic_passed": true,
+                "deterministic_failures": [],
+                "deterministic_passes": [],
+                "matched_skills": [
+                    "Python",
+                    "C",
+                    "FastAPI",
+                    "REST API",
+                    "PostgreSQL",
+                    "Git",
+                    "GitHub"
+                ],
+                "missing_skills": [
+                    "Java",
+                    "Scala",
+                    "AWS/GCP/Azure",
+                    "Docker/Kubernetes",
+                    "Security frameworks",
+                    "Zero\u2011trust architecture"
+                ],
+                "strengths": [
+                    "Strong Python backend development",
+                    "Full\u2011stack project leadership with measurable outcomes",
+                    "High academic performance (CGPA 8.5)",
+                    "Experience building RESTful APIs and database integrations",
+                    "Award\u2011winning teamwork and communication"
+                ],
+                "improvements": [
+                    "Acquire Java or Scala proficiency to align with core language requirements",
+                    "Learn cloud infrastructure (AWS/GCP/Azure) and containerization (Docker/Kubernetes)",
+                    "Study security fundamentals and zero\u2011trust design patterns",
+                    "Contribute to open\u2011source security or cloud projects to build relevant experience"
+                ],
+                "score_breakdown": {
+                    "skill_alignment": 20,
+                    "experience_relevance": 12,
+                    "education": 15,
+                    "communication": 8,
+                    "domain_fit": 4
+                }
+            },
+            "applied_at": "2026-08-21T08:55:56.093369"
+        }
+    ],
+    "noc_requests": [
+        {
+            "id": "d3d28245-e3df-4224-b1a5-9fb0e11d459e",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "internship_id": "17302c56-e5f9-43ae-bbbe-4dd7c1e33636",
+            "status": "PENDING"
+        },
+        {
+            "id": "f4948f55-071e-443a-ad36-70ef5db6004f",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "institute_id": "aa03e465-0786-4e34-a4fc-770ebc69c4ff",
+            "internship_id": "763a703b-59da-45b6-98e2-a882f6159363",
+            "status": "PENDING"
+        }
+    ],
+    "attendance_logs": [
+        {
+            "id": "e1e01f21-d8a3-4c8d-9ac3-7ff6db58591b",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "date": "2026-08-20",
+            "hours": 3.5,
+            "task_details": "ADD THE BACKEND API , WORK ON LISTING MODULE BY COMPANY",
+            "status": "APPROVED"
+        }
+    ],
+    "mentor_feedbacks": [],
+    "notifications": [
+        {
+            "id": "9f6a5e39-f23f-43cb-a8df-fef2784aaad8",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Welcome to INTERNTRAC, Prem Borse! Complete your profile and upload your resume to start applying.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T08:03:13.562743"
+        },
+        {
+            "id": "f01c69a8-c126-4c58-b64f-8f8ff218082d",
+            "user_id": "322affd5-cc5d-4d1a-ae85-2d3968cc0db9",
+            "message": "Welcome to INTERNTRAC, GAURAV PATIL! Complete your profile and upload your resume to start applying.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T08:09:27.698437"
+        },
+        {
+            "id": "6e04c69b-2a3c-44a0-b473-7a75de0e6507",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Your registration has been approved by G.H RAISONI COLLEGE AND MANAGEMENT. You can now log in and access the platform.",
+            "type": "STUDENT_APPROVAL",
+            "reference_id": "4fb3bb41-0775-436e-8d29-c75ba65913b4",
+            "is_read": false,
+            "created_at": "2026-08-20T08:15:25.985895"
+        },
+        {
+            "id": "ed2b3c1b-c06e-4dda-88e3-ea70925a604a",
+            "user_id": "322affd5-cc5d-4d1a-ae85-2d3968cc0db9",
+            "message": "Your registration has been approved by G.H RAISONI COLLEGE AND MANAGEMENT. You can now log in and access the platform.",
+            "type": "STUDENT_APPROVAL",
+            "reference_id": "0a7ebf68-88fd-4d55-837c-f0205a361387",
+            "is_read": false,
+            "created_at": "2026-08-20T08:15:26.688327"
+        },
+        {
+            "id": "c876f561-513b-4258-88d8-403e122cd6dd",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Your application for Full-Stack Software Engineer Intern at DecentSecurity (W24) was submitted! ATS Match: 70%.",
+            "type": "APPLICATION",
+            "reference_id": "763a703b-59da-45b6-98e2-a882f6159363",
+            "is_read": false,
+            "created_at": "2026-08-20T08:56:13.616468"
+        },
+        {
+            "id": "ac856749-cc0b-46fa-9987-753fbbb8c41f",
+            "user_id": "0faa224a-8ea5-4a6f-94a0-880d63ab0eaf",
+            "message": "Your company registration status was updated to 'APPROVED' by G.H RAISONI COLLEGE AND MANAGEMENT.",
+            "type": "COMPANY_VERIFICATION",
+            "reference_id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "is_read": false,
+            "created_at": "2026-08-20T09:07:56.633889"
+        },
+        {
+            "id": "c9300e96-f65e-4e2b-845b-54610a956058",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Welcome to INTERNTRAC, Dinkky shadani! Complete your profile and upload your resume to start applying.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T09:24:38.329675"
+        },
+        {
+            "id": "1d330e22-3304-4957-8384-0d6cc5b8da87",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Your registration has been approved by GODAVARI COLLEGE OF ENGINEERING, JALGOAN. You can now log in and access the platform.",
+            "type": "STUDENT_APPROVAL",
+            "reference_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "is_read": false,
+            "created_at": "2026-08-20T09:25:48.439041"
+        },
+        {
+            "id": "6816f2d8-e69a-4fe0-8f81-1e536e291540",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Your application for Software Engineering Intern at ETHARA AI was submitted! ATS Match: 78%.",
+            "type": "APPLICATION",
+            "reference_id": "38270e03-4996-41f8-a747-3d9cf37134a2",
+            "is_read": false,
+            "created_at": "2026-08-20T09:31:16.001673"
+        },
+        {
+            "id": "abd82fb6-4e5f-4aa1-8b92-e9f440bbc477",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Interview scheduled for 'Software Engineering Intern' at ETHARA AI on 2026-08-21 at 10:00 AM. Link: https://meet.google.com",
+            "type": "INTERVIEW",
+            "reference_id": "8d980fe7-8c91-4070-b6ad-0e434eed4799",
+            "is_read": false,
+            "created_at": "2026-08-20T09:32:31.448380"
+        },
+        {
+            "id": "38006dd8-669a-4ca4-a6a8-9c14ac09fa5a",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Congratulations! You have been hired for 'Software Engineering Intern' at ETHARA AI. Your offer letter is ready for download.",
+            "type": "APPLICATION",
+            "reference_id": "8d980fe7-8c91-4070-b6ad-0e434eed4799",
+            "is_read": false,
+            "created_at": "2026-08-20T09:32:53.604384"
+        },
+        {
+            "id": "bee6a29f-c682-46a7-92eb-4cd2b1afefd5",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "New task assigned: 'REST API- for login Module'. Deadline: 2026-08-25. Company: ETHARA AI",
+            "type": "TASK",
+            "reference_id": "20140e10-d8e6-4839-aeab-524081e4831f",
+            "is_read": false,
+            "created_at": "2026-08-20T09:36:20.832944"
+        },
+        {
+            "id": "1e4a3b8e-1e73-4eb6-b62f-52428b33931d",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Your application for DevOps & SRE Intern at Razorpay was submitted! ATS Match: 43%.",
+            "type": "APPLICATION",
+            "reference_id": "b94689a1-6cfc-4f73-81f1-4025ddd8155f",
+            "is_read": false,
+            "created_at": "2026-08-20T09:57:29.072741"
+        },
+        {
+            "id": "c834e32d-b605-4f3d-a335-de9d8d3b39c0",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Faculty mentor Prof.KIRAN BAVISKAR has been assigned to guide your internship progress.",
+            "type": "MENTOR",
+            "reference_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "is_read": false,
+            "created_at": "2026-08-20T10:00:54.611470"
+        },
+        {
+            "id": "fc441894-fbef-4121-90bf-bb31c60329e3",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Your application for Software Engineering Intern at ETHARA AI was submitted! ATS Match: 83%.",
+            "type": "APPLICATION",
+            "reference_id": "1a83f7df-cbc7-48ba-8b72-bacc4662b7c2",
+            "is_read": false,
+            "created_at": "2026-08-20T15:17:36.556807"
+        },
+        {
+            "id": "4b3bcccc-2308-4525-beba-31366617e7bb",
+            "user_id": "50e5e750-e0f0-4405-8b64-8f1bf47b72bb",
+            "message": "Welcome to INTERNTRAC, Ananya Reddy! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990472"
+        },
+        {
+            "id": "1091d1c4-2ae0-41a6-8868-916b4b5f3fa1",
+            "user_id": "42f5517d-d2c7-415b-9ff9-725c791c39d3",
+            "message": "Welcome to INTERNTRAC, Rohan Gupta! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990481"
+        },
+        {
+            "id": "9717895e-9ea5-4bc2-b76e-8a5072faeab6",
+            "user_id": "d07a02e0-48cd-437c-84e3-cbc38f15d5aa",
+            "message": "Welcome to INTERNTRAC, Meera Joshi! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990487"
+        },
+        {
+            "id": "03f8deb9-b137-4456-aaa3-f2c959aa92aa",
+            "user_id": "056422a5-3258-413b-99cf-2591b22f3ba8",
+            "message": "Welcome to INTERNTRAC, Arjun Nair! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990492"
+        },
+        {
+            "id": "0309100d-7a2a-4c6c-91b4-ae2ce856d52f",
+            "user_id": "42c37685-a660-4545-9e11-24381c9f9452",
+            "message": "Welcome to INTERNTRAC, Priyanka Singh! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990497"
+        },
+        {
+            "id": "86222549-3deb-44ea-a49a-5a6f898927ef",
+            "user_id": "94d4affb-10a2-4b98-8e7d-3cdbac2a8530",
+            "message": "Welcome to INTERNTRAC, Vikram More! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990502"
+        },
+        {
+            "id": "7f67851b-d47c-473b-85cd-74b7bd035b3b",
+            "user_id": "b323f30e-40bf-4a3b-bb7f-7b80456d0e5a",
+            "message": "Welcome to INTERNTRAC, Neha Kulkarni! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990508"
+        },
+        {
+            "id": "8bddd683-3e7e-462c-8d06-0711302329ea",
+            "user_id": "273bda6a-8baa-4816-8055-7e397c2ef606",
+            "message": "Welcome to INTERNTRAC, Saurabh Pawar! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990513"
+        },
+        {
+            "id": "d0ff5e2d-2c83-4e9a-bbf7-559297c4f4ba",
+            "user_id": "3f070291-136f-46d3-a412-402d25876442",
+            "message": "Welcome to INTERNTRAC, Divya Kulkarni! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990517"
+        },
+        {
+            "id": "060d2866-0d57-4a49-84ed-ac351585bbd8",
+            "user_id": "eeda90af-63c0-40df-bae3-fddb90b7bd88",
+            "message": "Welcome to INTERNTRAC, Akash Thakur! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990523"
+        },
+        {
+            "id": "0083c4bc-4a2b-4af0-90cd-976abf0b032d",
+            "user_id": "96bb09b8-ff5b-4409-a1d2-4a0cfd497665",
+            "message": "Welcome to INTERNTRAC, Tanvi Bhatt! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990528"
+        },
+        {
+            "id": "824113f8-276e-4c4f-a57f-5e71cc12788c",
+            "user_id": "6124408b-8280-43d0-91c1-370941102a07",
+            "message": "Welcome to INTERNTRAC, Karan Desai! Complete your profile and upload your resume.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-20T16:58:37.990533"
+        },
+        {
+            "id": "95539f76-d010-4b4f-88e1-e46c48974dd9",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Your application for 'Software Engineering Intern' at ETHARA AI has been updated to SHORTLISTED.",
+            "type": "APPLICATION",
+            "reference_id": "7d69088a-4f23-4819-8499-134afb160785",
+            "is_read": false,
+            "created_at": "2026-08-21T03:58:19.223302"
+        },
+        {
+            "id": "df56d64a-dafe-444b-ab4b-d5342f160f5f",
+            "user_id": "923dcf51-3581-422d-8332-84dd5510b7ed",
+            "message": "Welcome to INTERNTRAC, Login Test! Complete your profile and upload your resume to start applying.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-21T03:58:26.319999"
+        },
+        {
+            "id": "e9970ee2-1fde-48f0-9566-2d92c051d2e0",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Your application for Full-Stack Software Engineer Intern at DecentSecurity (W24) was submitted! ATS Match: 76%.",
+            "type": "APPLICATION",
+            "reference_id": "763a703b-59da-45b6-98e2-a882f6159363",
+            "is_read": false,
+            "created_at": "2026-08-21T04:06:06.724927"
+        },
+        {
+            "id": "982a942c-8df0-478b-8af2-e650a948a3f6",
+            "user_id": "94d4affb-10a2-4b98-8e7d-3cdbac2a8530",
+            "message": "Faculty mentor Prof. Amit Joshi has been assigned to guide your internship progress.",
+            "type": "MENTOR",
+            "reference_id": "f9bf6b9b-ca5c-4656-b2f4-5c44629debd0",
+            "is_read": false,
+            "created_at": "2026-08-21T04:11:58.667882"
+        },
+        {
+            "id": "b77b824a-52de-48f8-a0a6-a7713f72601a",
+            "user_id": "0faa224a-8ea5-4a6f-94a0-880d63ab0eaf",
+            "message": "Your company registration status was updated to 'REJECTED' by GODAVARI COLLEGE OF ENGINEERING, JALGOAN. Reason: DOCUMENTS NOT PROVIEDED",
+            "type": "COMPANY_VERIFICATION",
+            "reference_id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "is_read": false,
+            "created_at": "2026-08-21T04:42:20.999286"
+        },
+        {
+            "id": "aaeb1504-a561-4b12-84cd-d3674fd0a71b",
+            "user_id": "0faa224a-8ea5-4a6f-94a0-880d63ab0eaf",
+            "message": "Your company registration status was updated to 'APPROVED' by GODAVARI COLLEGE OF ENGINEERING, JALGOAN.",
+            "type": "COMPANY_VERIFICATION",
+            "reference_id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "is_read": false,
+            "created_at": "2026-08-21T04:42:29.539936"
+        },
+        {
+            "id": "9388344a-71c2-4f0e-9bad-065a29237b94",
+            "user_id": "ecd24d5d-cf66-49d5-b0f3-aeda4988604c",
+            "message": "Welcome to INTERNTRAC, MAYUR DNYANESHWAR KOLI! Complete your profile and upload your resume to start applying.",
+            "type": "SYSTEM",
+            "is_read": false,
+            "created_at": "2026-08-21T05:14:55.559923"
+        },
+        {
+            "id": "fce9ce4b-f3b9-46b8-8851-dfb55162717c",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Your application for React Frontend Developer Intern at Helix BioTech was submitted! ATS Match: 60%.",
+            "type": "APPLICATION",
+            "reference_id": "17302c56-e5f9-43ae-bbbe-4dd7c1e33636",
+            "is_read": false,
+            "created_at": "2026-08-21T05:29:17.955019"
+        },
+        {
+            "id": "2ebbe440-01ce-499b-98e4-749b9fadf25c",
+            "user_id": "96bb09b8-ff5b-4409-a1d2-4a0cfd497665",
+            "message": "Your application for Software Engineering Intern at ETHARA AI was submitted! ATS Match: 78%.",
+            "type": "APPLICATION",
+            "reference_id": "38270e03-4996-41f8-a747-3d9cf37134a2",
+            "is_read": false,
+            "created_at": "2026-08-21T07:07:44.035952"
+        },
+        {
+            "id": "43d243fb-f599-47c3-b98b-cdd63cca527e",
+            "user_id": "96bb09b8-ff5b-4409-a1d2-4a0cfd497665",
+            "message": "Your application for YC Startup Internships at Y Combinator Startups was submitted! ATS Match: 82%.",
+            "type": "APPLICATION",
+            "reference_id": "89b2ff54-b7f5-4585-8877-72b75fe43457",
+            "is_read": false,
+            "created_at": "2026-08-21T07:07:53.873208"
+        },
+        {
+            "id": "e8b7a989-8a9c-4dfb-a08d-16c3b956236b",
+            "user_id": "96bb09b8-ff5b-4409-a1d2-4a0cfd497665",
+            "message": "Your application for Full Stack Product Engineer - Remote/US at Jiga was submitted! ATS Match: 69%.",
+            "type": "APPLICATION",
+            "reference_id": "ad161365-2ae8-4b3a-9f6c-e4e0f14394bf",
+            "is_read": false,
+            "created_at": "2026-08-21T07:08:16.582712"
+        },
+        {
+            "id": "e37fdc78-1631-499d-8149-47dc2f573f1b",
+            "user_id": "b31cd1be-6fd4-4a99-b582-dc2792ba3009",
+            "message": "Your application for Software Engineer Internship at Rubrik was submitted! ATS Match: 59%.",
+            "type": "APPLICATION",
+            "reference_id": "a0f8019d-63a2-4dfc-926d-67d6c61bf2f6",
+            "is_read": false,
+            "created_at": "2026-08-21T08:55:56.093444"
+        },
+        {
+            "id": "4f83b395-d2ad-4c61-85cf-5f40da8a5b55",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Interview scheduled for 'Software Engineering Intern' at ETHARA AI on 2026-08-24 at 10:00 AM. Link: https://meet.google.com",
+            "type": "INTERVIEW",
+            "reference_id": "7d69088a-4f23-4819-8499-134afb160785",
+            "is_read": false,
+            "created_at": "2026-08-21T11:21:04.766958"
+        },
+        {
+            "id": "20aa831c-0057-43ec-8ad5-9c24543de653",
+            "user_id": "411cad6e-94ec-4b26-9424-5c4ed02c7dc6",
+            "message": "Congratulations! You have been hired for 'Software Engineering Intern' at ETHARA AI. Your offer letter is ready for download.",
+            "type": "APPLICATION",
+            "reference_id": "7d69088a-4f23-4819-8499-134afb160785",
+            "is_read": false,
+            "created_at": "2026-08-21T11:21:28.474490"
+        }
+    ],
+    "internship_tasks": [
+        {
+            "id": "20140e10-d8e6-4839-aeab-524081e4831f",
+            "application_id": "8d980fe7-8c91-4070-b6ad-0e434eed4799",
+            "student_id": "d6079ba4-2dcf-4d77-b6bf-0f17f5869862",
+            "company_profile_id": "e03c9dae-8e13-4893-939a-cd3867fcfd1a",
+            "title": "REST API- for login Module",
+            "description": "create REST API for login module, low latency , higher bandwith. make sure it will work properly and esure endpoint",
+            "deadline": "2026-08-25",
+            "assigned_date": "2026-08-20T09:36:20.832917",
+            "status": "ASSIGNED",
+            "github_link": null,
+            "submission_notes": null,
+            "submitted_at": null,
+            "feedback": null,
+            "stars": null,
+            "evaluated_at": null
+        }
+    ]
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Applicant Tracking Pipeline</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Smooth scrolling for pipeline columns */
+        .pipeline-container {
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-surface-variant) transparent;
+        }
+        .pipeline-container::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        .pipeline-container::-webkit-scrollbar-thumb {
+            background-color: #e0e3e6;
+            border-radius: 4px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-on-surface": "#eff1f4",
+                        "on-secondary-fixed": "#23005c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e4e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e0e3e6",
+                        "secondary-fixed": "#e9ddff",
+                        "primary-container": "#fd7e14",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#5509c6",
+                        "surface-container-low": "#f2f4f7",
+                        "on-surface": "#191c1e",
+                        "on-primary-fixed": "#321300",
+                        "outline": "#8b7264",
+                        "primary": "#984700",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-primary-container": "#5e2900",
+                        "surface": "#f7f9fc",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#ffb68a",
+                        "secondary": "#6b33dc",
+                        "on-primary-fixed-variant": "#743500",
+                        "background": "#f7f9fc",
+                        "surface-bright": "#f7f9fc",
+                        "surface-tint": "#984700",
+                        "on-background": "#191c1e",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "on-tertiary-container": "#383838",
+                        "on-secondary-container": "#fffbff",
+                        "tertiary": "#5e5e5e",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "outline-variant": "#dfc0b0",
+                        "tertiary-container": "#a2a1a1",
+                        "inverse-surface": "#2d3133",
+                        "surface-variant": "#e0e3e6",
+                        "primary-fixed-dim": "#ffb68a",
+                        "on-surface-variant": "#574236",
+                        "surface-dim": "#d8dadd",
+                        "surface-container-high": "#e6e8eb",
+                        "primary-fixed": "#ffdbc8",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#8552f6",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eceef1"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "container-max": "1200px",
+                        "stack-md": "16px",
+                        "stack-lg": "24px",
+                        "section-gap": "96px"
+                    },
+                    fontFamily: {
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"]
+                    },
+                    fontSize: {
+                        "label-md": ["14px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "500" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-md": ["28px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "body-md": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "title-lg": ["20px", { lineHeight: "1.4", fontWeight: "600" }],
+                        "headline-lg": ["36px", { lineHeight: "1.2", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface dark:bg-inverse-surface shadow-sm sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md font-bold text-secondary dark:text-secondary-fixed flex items-center gap-2 scale-95 duration-150 transition-all" href="#">
+<span class="material-symbols-outlined text-[32px]">school</span>
+                Raisoni Portal
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Students</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary font-bold hover:text-primary transition-colors" href="#">Institutes</a> <!-- Assuming 'Institutes' context for managing applicants -->
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Companies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">FAQ</a>
+</nav>
+<!-- Actions -->
+<div class="hidden md:flex items-center gap-4">
+<button class="font-label-md text-label-md text-primary border border-primary px-4 py-2 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-[0_4px_20px_rgba(0,0,0,0.05)]">Login</button>
+<button class="font-label-md text-label-md bg-primary text-on-primary px-4 py-2 rounded hover:bg-on-primary-fixed hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all">Sign up</button>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content: Pipeline View -->
+<main class="flex-grow flex flex-col pt-stack-lg pb-section-gap px-gutter max-w-container-max mx-auto w-full h-[calc(100vh-80px)] overflow-hidden">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-stack-lg gap-4 shrink-0">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-1 rounded font-label-md text-label-md">Active</span>
+<span class="text-on-surface-variant font-body-md text-body-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Remote
+                    </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Software Engineering Intern - Summer 2024</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">TechCorp Inc. • 45 Applicants</p>
+</div>
+<div class="flex gap-2">
+<button class="bg-surface-container-highest text-on-surface font-label-md text-label-md px-4 py-2 rounded flex items-center gap-2 hover:bg-surface-dim transition-colors">
+<span class="material-symbols-outlined">filter_list</span> Filter
+                </button>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-2 rounded flex items-center gap-2 hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all">
+<span class="material-symbols-outlined">add</span> Add Candidate
+                </button>
+</div>
+</div>
+<!-- Pipeline Board -->
+<div class="pipeline-container flex gap-stack-lg overflow-x-auto pb-4 h-full">
+<!-- Column 1: Applied -->
+<div class="flex flex-col min-w-[300px] w-[300px] shrink-0 bg-surface-container-low rounded-lg p-stack-sm border border-outline-variant h-full">
+<div class="flex justify-between items-center p-2 mb-2 shrink-0">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+                        Applied <span class="bg-surface-container-highest text-on-surface-variant px-2 rounded-full text-label-md font-label-md">12</span>
+</h2>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<div class="flex flex-col gap-stack-sm overflow-y-auto h-full pr-1">
+<!-- Candidate Card -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-stack-md shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:border-primary-container transition-all cursor-pointer group">
+<div class="flex gap-3 items-start mb-3">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="A professional headshot portrait of a young male college student with short dark hair, wearing a neat casual button-down shirt, smiling warmly against a bright, softly blurred library background. The lighting is natural and flattering, embodying a confident and approachable academic mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpec32vA3-okJlgaAVoTUOQ5uBqGo1w7umzBGG1uIPbSut9UURcCBlFks9WbfLGdhAtH4ENqyH2Zj1mwcdPCcpa0boqqv0bJBXxAJGLBKWBCnazm4pUl5S368Gc9rDAw8HIdU_voTflk4d_64-jFenQobMy4YgnqZ_fz_lanH7oN5loRaGaSiXOueuzKANyOw4Vpimtd7ZuPcJ-yG8GZ0BcKKINqHVCt-GSDYPI1bBxup-7jZEN7m5"/>
+<div>
+<h3 class="font-title-lg text-[16px] text-on-surface leading-tight group-hover:text-primary transition-colors">Rahul Sharma</h3>
+<p class="font-body-md text-[12px] text-on-surface-variant">G.H. Raisoni College of Engineering</p>
+</div>
+</div>
+<div class="flex justify-between items-center mb-4">
+<span class="bg-green-100 text-green-800 px-2 py-1 rounded text-[12px] font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> 92% Match
+                            </span>
+<span class="text-[12px] text-on-surface-variant">2 days ago</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 border border-outline-variant text-on-surface font-label-md text-[12px] py-1.5 rounded hover:bg-surface-container transition-colors">Resume</button>
+<button class="flex-1 bg-surface-container-highest text-on-surface font-label-md text-[12px] py-1.5 rounded hover:bg-surface-dim transition-colors">Move</button>
+</div>
+</div>
+<!-- Candidate Card 2 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-stack-md shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:border-primary-container transition-all cursor-pointer group">
+<div class="flex gap-3 items-start mb-3">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="A bright, professional headshot of a young female university student with glasses and dark hair pulled back, wearing a light blue blouse. She is smiling confidently. The background is a modern, sunlit campus building interior, conveying a fresh, ambitious, and clean corporate-academic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvFcXy65AyFlqHDmSSLaVuMSSCmoxPA8nZUfsjZkDC0rBWq4cm5ibHLyOGB588DIPmTuz1fIL6EymGuW5euOoxAfArgDSOzqN8fxVxEIoiqmeVHzJHLxwcISKL6LqihxKmS6M9HYSP2pKWidLuk5IoR6nbyX2a7er83bELJJ_swFbrrwWeBVOb0WQnWbahFGNVl1dxDK0fJ_-Gh2H4jbz82Lb2tayTTeg4Q-VULhQ7poviiW8-czEE"/>
+<div>
+<h3 class="font-title-lg text-[16px] text-on-surface leading-tight group-hover:text-primary transition-colors">Priya Patel</h3>
+<p class="font-body-md text-[12px] text-on-surface-variant">MIT Pune</p>
+</div>
+</div>
+<div class="flex justify-between items-center mb-4">
+<span class="bg-green-100 text-green-800 px-2 py-1 rounded text-[12px] font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> 88% Match
+                            </span>
+<span class="text-[12px] text-on-surface-variant">3 days ago</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 border border-outline-variant text-on-surface font-label-md text-[12px] py-1.5 rounded hover:bg-surface-container transition-colors">Resume</button>
+<button class="flex-1 bg-surface-container-highest text-on-surface font-label-md text-[12px] py-1.5 rounded hover:bg-surface-dim transition-colors">Move</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Screened -->
+<div class="flex flex-col min-w-[300px] w-[300px] shrink-0 bg-surface-container-low rounded-lg p-stack-sm border border-outline-variant h-full">
+<div class="flex justify-between items-center p-2 mb-2 shrink-0">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+                        Screened <span class="bg-surface-container-highest text-on-surface-variant px-2 rounded-full text-label-md font-label-md">5</span>
+</h2>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<div class="flex flex-col gap-stack-sm overflow-y-auto h-full pr-1">
+<!-- Candidate Card 3 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-stack-md shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:border-primary-container transition-all cursor-pointer group">
+<div class="flex gap-3 items-start mb-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-title-lg font-bold shrink-0">
+                                AK
+                            </div>
+<div>
+<h3 class="font-title-lg text-[16px] text-on-surface leading-tight group-hover:text-primary transition-colors">Amit Kumar</h3>
+<p class="font-body-md text-[12px] text-on-surface-variant">VJTI Mumbai</p>
+</div>
+</div>
+<div class="flex justify-between items-center mb-4">
+<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-[12px] font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> 75% Match
+                            </span>
+<span class="text-[12px] text-on-surface-variant">1 week ago</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 border border-primary text-primary font-label-md text-[12px] py-1.5 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors">Schedule</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Interview -->
+<div class="flex flex-col min-w-[300px] w-[300px] shrink-0 bg-surface-container-low rounded-lg p-stack-sm border-t-4 border-t-secondary h-full shadow-sm">
+<div class="flex justify-between items-center p-2 mb-2 shrink-0">
+<h2 class="font-title-lg text-title-lg text-secondary flex items-center gap-2">
+                        Interview <span class="bg-secondary-fixed text-on-secondary-fixed px-2 rounded-full text-label-md font-label-md">2</span>
+</h2>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<div class="flex flex-col gap-stack-sm overflow-y-auto h-full pr-1">
+<!-- Candidate Card 4 (Interviewing) -->
+<div class="bg-surface-container-lowest border border-secondary-fixed rounded-lg p-stack-md shadow-[0_4px_12px_rgba(107,51,220,0.08)] hover:shadow-[0_6px_24px_rgba(107,51,220,0.12)] transition-all cursor-pointer group">
+<div class="flex gap-3 items-start mb-3">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="A crisp, high-resolution portrait of a young male professional in a modern, well-lit indoor setting, perhaps a glass-walled conference room. He is wearing a smart-casual blazer over a t-shirt, looking directly at the camera with a confident, ready-to-work expression. The lighting is cool and corporate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGHFmappfcu9YJgoExwBJXjxkWPtZXN5cj3B0kUFZSZq9s6afamnbC4fGkeTaF9kA_O7O3DqMiZEduZc1Yxs_Bl5jCm75LwkHIEwcy6HqLSASpDJ9C4XR36ibcy_lwJBgyvvPmL9lXuIe1m-s0ba9OCdX5jXLTY8TYBAOO-py7tnd7tL3ywIyeG-fqD8Yi4jKb_EqQgvde4Qb-BMQWfLTaJRLgADgZUMkY-CCsPYKj6YV5vVAY4UIb"/>
+<div>
+<h3 class="font-title-lg text-[16px] text-on-surface leading-tight group-hover:text-secondary transition-colors">Neha Gupta</h3>
+<p class="font-body-md text-[12px] text-on-surface-variant">COEP Pune</p>
+</div>
+</div>
+<div class="bg-surface-container text-on-surface-variant rounded p-2 mb-4 text-[12px] flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+                            Tomorrow, 10:00 AM
+                        </div>
+<div class="flex gap-2">
+<button class="flex-1 bg-secondary text-on-secondary font-label-md text-[12px] py-1.5 rounded hover:bg-on-secondary-fixed-variant transition-colors shadow-sm">Join Call</button>
+<button class="flex-1 border border-outline-variant text-on-surface font-label-md text-[12px] py-1.5 rounded hover:bg-surface-container transition-colors">Feedback</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 4: Offered -->
+<div class="flex flex-col min-w-[300px] w-[300px] shrink-0 bg-surface-container-low rounded-lg p-stack-sm border border-outline-variant h-full opacity-70">
+<div class="flex justify-between items-center p-2 mb-2 shrink-0">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+                        Offered <span class="bg-surface-container-highest text-on-surface-variant px-2 rounded-full text-label-md font-label-md">0</span>
+</h2>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<div class="flex items-center justify-center h-full text-on-surface-variant flex-col gap-2">
+<span class="material-symbols-outlined text-[32px] opacity-50">inbox</span>
+<p class="text-body-md">No candidates yet</p>
+</div>
+</div>
+<!-- Column 5: Hired -->
+<div class="flex flex-col min-w-[300px] w-[300px] shrink-0 bg-surface-container-low rounded-lg p-stack-sm border border-outline-variant h-full opacity-70">
+<div class="flex justify-between items-center p-2 mb-2 shrink-0">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+                        Hired <span class="bg-surface-container-highest text-on-surface-variant px-2 rounded-full text-label-md font-label-md">0</span>
+</h2>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<div class="flex items-center justify-center h-full text-on-surface-variant flex-col gap-2">
+<span class="material-symbols-outlined text-[32px] opacity-50">task_alt</span>
+<p class="text-body-md">No candidates yet</p>
+</div>
+</div>
+</div>
+</main>
+</body></html>

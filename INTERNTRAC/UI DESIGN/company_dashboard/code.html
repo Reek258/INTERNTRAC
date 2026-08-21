@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recruiter Dashboard - Raisoni Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#eff1f4",
+                        "on-secondary-fixed": "#23005c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e4e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e0e3e6",
+                        "secondary-fixed": "#e9ddff",
+                        "primary-container": "#fd7e14",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#5509c6",
+                        "surface-container-low": "#f2f4f7",
+                        "on-surface": "#191c1e",
+                        "on-primary-fixed": "#321300",
+                        "outline": "#8b7264",
+                        "primary": "#984700",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-primary-container": "#5e2900",
+                        "surface": "#f7f9fc",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#ffb68a",
+                        "secondary": "#6b33dc",
+                        "on-primary-fixed-variant": "#743500",
+                        "background": "#f7f9fc",
+                        "surface-bright": "#f7f9fc",
+                        "surface-tint": "#984700",
+                        "on-background": "#191c1e",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "on-tertiary-container": "#383838",
+                        "on-secondary-container": "#fffbff",
+                        "tertiary": "#5e5e5e",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "outline-variant": "#dfc0b0",
+                        "tertiary-container": "#a2a1a1",
+                        "inverse-surface": "#2d3133",
+                        "surface-variant": "#e0e3e6",
+                        "primary-fixed-dim": "#ffb68a",
+                        "on-surface-variant": "#574236",
+                        "surface-dim": "#d8dadd",
+                        "surface-container-high": "#e6e8eb",
+                        "primary-fixed": "#ffdbc8",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#8552f6",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eceef1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "container-max": "1200px",
+                        "stack-md": "16px",
+                        "stack-lg": "24px",
+                        "section-gap": "96px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "title-lg": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; color: #191c1e; }
+        h1, h2, h3, h4, h5, h6, .font-headline-md, .font-headline-lg, .font-display-lg, .font-title-lg { font-family: 'Hanken Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="bg-surface dark:bg-inverse-surface w-full z-50 sticky top-0 border-b-0 shadow-sm">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md font-bold text-secondary dark:text-secondary-fixed flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">domain</span>
+                Raisoni Portal
+            </a>
+<!-- Navigation Links (Web Desktop) -->
+<ul class="hidden md:flex gap-8 items-center h-full">
+<li class="h-full flex items-center"><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors flex items-center h-full" href="#">Home</a></li>
+<li class="h-full flex items-center"><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors flex items-center h-full" href="#">Students</a></li>
+<li class="h-full flex items-center"><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors flex items-center h-full" href="#">Institutes</a></li>
+<!-- Active Link for Recruiter Dashboard context -->
+<li class="h-full flex items-center"><a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary font-bold flex items-center h-full px-1" href="#">Companies</a></li>
+<li class="h-full flex items-center"><a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors flex items-center h-full" href="#">FAQ</a></li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<a class="font-label-md text-label-md text-primary dark:text-inverse-primary hover:text-primary dark:hover:text-inverse-primary transition-colors scale-95 duration-150 transition-all" href="#">Login</a>
+<a class="font-label-md text-label-md bg-primary-container text-white px-4 py-2 rounded-DEFAULT hover:bg-opacity-90 scale-95 duration-150 transition-all shadow-[0px_4px_20px_rgba(0,0,0,0.05)]" href="#">Sign up</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-grow w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg flex flex-col gap-section-gap">
+<!-- Welcome Banner & Quick Action Bento Box -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
+<!-- Welcome Banner (Spans 8 columns) -->
+<div class="col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl p-stack-lg flex flex-col justify-between border border-[#E5E7EB] shadow-[0px_4px_20px_rgba(0,0,0,0.02)] relative overflow-hidden">
+<!-- Abstract Background Decoration -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-secondary-fixed opacity-20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="z-10 relative">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Welcome back, <span class="text-secondary">TechNova Solutions</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Here's what's happening with your internship recruitment campaigns today. You have several candidates waiting for review.</p>
+</div>
+<div class="mt-stack-lg flex items-center gap-4 z-10 relative">
+<div class="flex -space-x-4">
+<img alt="Applicant" class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="A close-up headshot of a smiling young professional woman in a modern office setting. The lighting is bright and inviting, fitting a corporate modern aesthetic. She wears smart business casual attire. Background is slightly blurred office space. High contrast, clean, professional photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQExpXa7-D3HEGsnojmOHXeM40JTt7blsq8pO9MgOzeUGK6z63Gq-lXsAGaiXxFI1kCS4Tsb0-qbk1sqizbUuXuVomytlCaKlAdmRggEJNBjM34i5nT8fNUlhodG0FrPMc3BM8F-8MPZKmGReEiIDXXoJKmfMLjivXKIUFZkWkN1n8SxAgpI2no6ccKUW3s4yXeaVLJ7UE_SFsDuaDFoy45YaDuX76ezH4aRj5E-K9v8yHLd6BkJme"/>
+<img alt="Applicant" class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="A portrait of a focused young man looking thoughtfully off-camera, wearing a button-down shirt. The background is a clean, modern co-working space with ample natural light pouring in. The aesthetic is professional, structured, and vibrant, characteristic of an optimistic corporate setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMT6lByqr4qK3SO9ks6x6I60zbZJB00xXuj8gKeOBBy7K90NNs84DO-OIq58Ge9Jat3v5dnILgryEZZTICL4LTIlxFLzgUETJDZ713mj4Aw7Eur5Z6dNkjxRzsqlRZmTBxH1hPLazJX7w66gn6SAfcl0aW7Bq0NMq3T1fF4urYNU4ZG9FNk-Emo5hZONscECrTugq1BKvWHLJFGA39xVCCL_VsA881db2KVx3Qg6urAAdeGPkASpu"/>
+<img alt="Applicant" class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="A headshot of an energetic college student smiling confidently directly at the camera. They are in a modern university library setting with soft, high-key lighting. The color palette is vibrant yet clean, emphasizing a bright, optimistic early-career mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU5_d-Br-sWRZpksnqSGHgp6PISwj15rMse2Fw6iKdiJ4xk6z3Zu5bdmFM_MQvuEhgzsUS0nLlEZ-sC-AP4NS8yygW3Ww_UWlecO8eK4vscKhvYWRv7nW6c1gzexo_8vJ-HV0QzjpiUkvK0MLa3f3xDDllPkgI5cizMQ8oXvp2lz88VrYIqjinmeFerAVlY9MPNMowEOapVqcQDPRGJ83K6fjcd_f8BAH1G8ozdV2CLmpxC4_YrC0Q"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant"><strong class="text-on-surface font-semibold">+12 new applicants</strong> since yesterday</p>
+</div>
+</div>
+<!-- Quick Action Box (Spans 4 columns) -->
+<div class="col-span-1 md:col-span-4 bg-primary-container rounded-xl p-stack-lg flex flex-col items-center justify-center text-center shadow-[0px_8px_30px_rgba(253,126,20,0.15)] group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 text-primary-container group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">add</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-white mb-2">Post New Internship</h2>
+<p class="font-body-md text-body-md text-primary-fixed opacity-90">Reach thousands of ambitious students across Raisoni institutes.</p>
+</div>
+</section>
+<!-- High-Level Stats Bento Grid -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">monitoring</span>
+                Recruitment Overview
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+<!-- Stat Card 1 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-lg border border-[#E5E7EB] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex justify-between items-start mb-2">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active Postings</p>
+<span class="material-symbols-outlined text-primary opacity-70">work</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h4 class="font-display-lg text-[48px] md:text-display-lg text-on-surface leading-none">8</h4>
+</div>
+<p class="font-body-md text-body-md text-[#16a34a] mt-2 flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+                        +2 this week
+                    </p>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-lg border border-[#E5E7EB] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex justify-between items-start mb-2">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Applicants</p>
+<span class="material-symbols-outlined text-secondary opacity-70">groups</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h4 class="font-display-lg text-[48px] md:text-display-lg text-on-surface leading-none">142</h4>
+</div>
+<p class="font-body-md text-body-md text-[#16a34a] mt-2 flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+                        +24 this week
+                    </p>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-lg border border-[#E5E7EB] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex justify-between items-start mb-2">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Interviews Scheduled</p>
+<span class="material-symbols-outlined text-primary opacity-70">event_available</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h4 class="font-display-lg text-[48px] md:text-display-lg text-on-surface leading-none">15</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                        Next interview in 2 hours
+                    </p>
+</div>
+<!-- Stat Card 4 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-lg border border-[#E5E7EB] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+<div class="flex justify-between items-start mb-2">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Hires Made</p>
+<span class="material-symbols-outlined text-secondary opacity-70">handshake</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h4 class="font-display-lg text-[48px] md:text-display-lg text-on-surface leading-none">3</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+                        This semester
+                    </p>
+</div>
+</div>
+</section>
+<!-- Active Internships List -->
+<section class="mb-stack-lg">
+<div class="flex justify-between items-center mb-stack-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">view_list</span>
+                    Active Internships
+                </h3>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1" href="#">
+                    View All Postings <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-[#E5E7EB] overflow-hidden">
+<!-- List Header (Hidden on Mobile) -->
+<div class="hidden md:grid grid-cols-12 gap-4 p-4 bg-surface-container-low border-b border-[#E5E7EB] font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+<div class="col-span-5">Role &amp; Department</div>
+<div class="col-span-2">Status</div>
+<div class="col-span-2 text-center">Applicants</div>
+<div class="col-span-2">Deadline</div>
+<div class="col-span-1 text-right">Action</div>
+</div>
+<!-- List Item 1 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 items-center border-b border-[#E5E7EB] hover:bg-surface-bright transition-colors group">
+<div class="col-span-1 md:col-span-5 flex flex-col">
+<h4 class="font-title-lg text-title-lg text-on-surface mb-1">Frontend Developer Intern</h4>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Hybrid, Pune
+                        </p>
+<!-- Mobile Meta Labels -->
+<div class="flex gap-2 mt-2 md:hidden">
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-2 py-0.5 rounded text-xs font-medium">Active</span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded text-xs">45 Applicants</span>
+</div>
+</div>
+<div class="hidden md:flex col-span-2 items-center">
+<span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full text-xs font-medium bg-primary-fixed text-on-primary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                            Active
+                        </span>
+</div>
+<div class="hidden md:flex col-span-2 flex-col items-center justify-center">
+<span class="font-title-lg text-title-lg text-on-surface">45</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">12 new</span>
+</div>
+<div class="hidden md:flex col-span-2 flex-col">
+<span class="font-body-md text-body-md text-on-surface">Oct 15, 2024</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">10 days left</span>
+</div>
+<div class="col-span-1 md:col-span-1 flex justify-end">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 items-center border-b border-[#E5E7EB] hover:bg-surface-bright transition-colors group">
+<div class="col-span-1 md:col-span-5 flex flex-col">
+<h4 class="font-title-lg text-title-lg text-on-surface mb-1">Data Science Analyst Intern</h4>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Remote
+                        </p>
+<!-- Mobile Meta Labels -->
+<div class="flex gap-2 mt-2 md:hidden">
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-2 py-0.5 rounded text-xs font-medium">Active</span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded text-xs">82 Applicants</span>
+</div>
+</div>
+<div class="hidden md:flex col-span-2 items-center">
+<span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full text-xs font-medium bg-primary-fixed text-on-primary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                            Active
+                        </span>
+</div>
+<div class="hidden md:flex col-span-2 flex-col items-center justify-center">
+<span class="font-title-lg text-title-lg text-on-surface">82</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">5 new</span>
+</div>
+<div class="hidden md:flex col-span-2 flex-col">
+<span class="font-body-md text-body-md text-on-surface">Oct 20, 2024</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">15 days left</span>
+</div>
+<div class="col-span-1 md:col-span-1 flex justify-end">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- List Item 3 (Draft State) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 items-center hover:bg-surface-bright transition-colors group opacity-80">
+<div class="col-span-1 md:col-span-5 flex flex-col">
+<h4 class="font-title-lg text-title-lg text-on-surface mb-1">UX Research Intern</h4>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">location_on</span> On-site, Nagpur
+                        </p>
+<!-- Mobile Meta Labels -->
+<div class="flex gap-2 mt-2 md:hidden">
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded text-xs font-medium">Draft</span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded text-xs">-</span>
+</div>
+</div>
+<div class="hidden md:flex col-span-2 items-center">
+<span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full text-xs font-medium bg-surface-container-high text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                            Draft
+                        </span>
+</div>
+<div class="hidden md:flex col-span-2 flex-col items-center justify-center">
+<span class="font-title-lg text-title-lg text-on-surface-variant">-</span>
+</div>
+<div class="hidden md:flex col-span-2 flex-col">
+<span class="font-body-md text-body-md text-on-surface-variant">Not set</span>
+</div>
+<div class="col-span-1 md:col-span-1 flex justify-end">
+<button class="font-label-md text-label-md text-primary hover:underline px-2 py-1 rounded">
+                            Edit
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface w-full mt-auto border-t border-[#E5E7EB]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-gutter max-w-container-max mx-auto py-section-gap">
+<!-- Brand & Copyright -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">domain</span>
+                    Raisoni
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant">Copyright © 2024 G.H. Raisoni College. All rights reserved.</p>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1 flex flex-col gap-2">
+<h5 class="font-title-lg text-title-lg text-on-surface mb-2">Company</h5>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Blog</a>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1 flex flex-col gap-2">
+<h5 class="font-title-lg text-title-lg text-on-surface mb-2">Legal</h5>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+</div>
+<!-- Links Column 3 -->
+<div class="col-span-1 flex flex-col gap-2">
+<h5 class="font-title-lg text-title-lg text-on-surface mb-2">Employers</h5>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Pricing</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Post an Internship</a>
+</div>
+</div>
+</footer>
+</body></html>

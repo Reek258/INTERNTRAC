@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manage Internships - Raisoni Portal</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind & Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#eff1f4",
+                      "on-secondary-fixed": "#23005c",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#e4e2e2",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#e0e3e6",
+                      "secondary-fixed": "#e9ddff",
+                      "primary-container": "#fd7e14",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "on-error-container": "#93000a",
+                      "on-secondary-fixed-variant": "#5509c6",
+                      "surface-container-low": "#f2f4f7",
+                      "on-surface": "#191c1e",
+                      "on-primary-fixed": "#321300",
+                      "outline": "#8b7264",
+                      "primary": "#984700",
+                      "tertiary-fixed-dim": "#c8c6c6",
+                      "on-primary-container": "#ffffff", /* Adjusted for contrast on primary-container */
+                      "surface": "#f7f9fc",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#ffb68a",
+                      "secondary": "#6b33dc",
+                      "on-primary-fixed-variant": "#743500",
+                      "background": "#f7f9fc",
+                      "surface-bright": "#f7f9fc",
+                      "surface-tint": "#984700",
+                      "on-background": "#191c1e",
+                      "secondary-fixed-dim": "#d0bcff",
+                      "on-tertiary-container": "#383838",
+                      "on-secondary-container": "#fffbff",
+                      "tertiary": "#5e5e5e",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "outline-variant": "#dfc0b0",
+                      "tertiary-container": "#a2a1a1",
+                      "inverse-surface": "#2d3133",
+                      "surface-variant": "#e0e3e6",
+                      "primary-fixed-dim": "#ffb68a",
+                      "on-surface-variant": "#574236",
+                      "surface-dim": "#d8dadd",
+                      "surface-container-high": "#e6e8eb",
+                      "primary-fixed": "#ffdbc8",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#8552f6",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#eceef1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "container-max": "1200px",
+                      "stack-md": "16px",
+                      "stack-lg": "24px",
+                      "section-gap": "96px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "title-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Base styles for material symbols */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Custom scrollbar for the list */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #e0e3e6;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 w-full flat no shadows">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<div class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-stack-sm">
+<span class="material-symbols-outlined" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+                Raisoni Portal
+            </div>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Students</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Institutes</a>
+<!-- Active Navigation: Companies -->
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary font-bold hover:text-primary transition-colors flex items-center h-20" href="#">Companies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">FAQ</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-stack-md hidden md:flex">
+<button class="font-label-md text-label-md text-primary hover:text-primary transition-colors scale-95 duration-150 transition-all">Login</button>
+<button class="font-label-md text-label-md bg-primary-container text-on-primary-container px-6 py-2 rounded scale-95 duration-150 transition-all shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:bg-surface-tint">Sign up</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Dashboard Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-stack-lg gap-stack-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-stack-sm">Manage Postings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">View, edit, and track applicants for your internship listings.</p>
+</div>
+<button class="flex items-center gap-stack-sm bg-secondary text-on-secondary font-label-md text-label-md px-6 py-3 rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="add" style="font-variation-settings: 'FILL' 1;">add</span>
+                Create New Posting
+            </button>
+</div>
+<!-- Master-Detail Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter h-[calc(100vh-200px)] min-h-[600px]">
+<!-- Left Column: Master List -->
+<div class="lg:col-span-4 flex flex-col bg-surface rounded-xl border border-surface-variant shadow-sm overflow-hidden h-full">
+<!-- Search & Filters Header -->
+<div class="p-stack-md border-b border-surface-variant bg-surface-container-lowest">
+<div class="relative mb-stack-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface border border-surface-variant rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="Search role, dept, or location..." type="text"/>
+</div>
+<div class="flex gap-stack-sm overflow-x-auto custom-scrollbar pb-2">
+<button class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-colors">All Postings</button>
+<button class="whitespace-nowrap px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-colors">Active</button>
+<button class="whitespace-nowrap px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-colors">Closed</button>
+</div>
+</div>
+<!-- Scrollable List -->
+<div class="flex-grow overflow-y-auto custom-scrollbar p-stack-sm flex flex-col gap-stack-sm">
+<!-- Active List Item (Selected) -->
+<div class="p-stack-md rounded-lg border-2 border-primary bg-primary-fixed bg-opacity-20 cursor-pointer transition-all">
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-title-lg text-title-lg text-on-surface">Software Eng Intern</h3>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-md text-[11px] uppercase tracking-wider">Active</span>
+</div>
+<div class="flex items-center gap-stack-sm text-on-surface-variant mb-stack-sm font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px]" data-icon="domain">domain</span> Engineering
+                            <span class="w-1 h-1 rounded-full bg-surface-variant mx-1"></span>
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span> Pune, MH
+                        </div>
+<div class="flex justify-between items-center mt-stack-md pt-stack-sm border-t border-primary-fixed-dim">
+<span class="font-body-md text-body-md text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="group">group</span> 42 Applicants
+                            </span>
+<span class="font-label-md text-label-md text-on-surface-variant">Posted 2d ago</span>
+</div>
+</div>
+<!-- Inactive List Item -->
+<div class="p-stack-md rounded-lg border border-surface-variant bg-surface-container-lowest hover:border-outline-variant cursor-pointer transition-all">
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-title-lg text-title-lg text-on-surface">Data Analyst Intern</h3>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-md text-[11px] uppercase tracking-wider">Active</span>
+</div>
+<div class="flex items-center gap-stack-sm text-on-surface-variant mb-stack-sm font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px]" data-icon="domain">domain</span> Analytics
+                            <span class="w-1 h-1 rounded-full bg-surface-variant mx-1"></span>
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span> Remote
+                        </div>
+<div class="flex justify-between items-center mt-stack-md pt-stack-sm border-t border-surface-variant">
+<span class="font-body-md text-body-md text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="group">group</span> 18 Applicants
+                            </span>
+<span class="font-label-md text-label-md text-on-surface-variant">Posted 5d ago</span>
+</div>
+</div>
+<!-- Closed List Item -->
+<div class="p-stack-md rounded-lg border border-surface-variant bg-surface-container-low opacity-75 cursor-pointer transition-all">
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-title-lg text-title-lg text-on-surface line-through decoration-surface-variant">Marketing Intern</h3>
+<span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-[11px] uppercase tracking-wider">Closed</span>
+</div>
+<div class="flex items-center gap-stack-sm text-on-surface-variant mb-stack-sm font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px]" data-icon="domain">domain</span> Marketing
+                            <span class="w-1 h-1 rounded-full bg-surface-variant mx-1"></span>
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span> Nagpur, MH
+                        </div>
+<div class="flex justify-between items-center mt-stack-md pt-stack-sm border-t border-surface-variant">
+<span class="font-body-md text-body-md text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="group">group</span> 115 Applicants
+                            </span>
+<span class="font-label-md text-label-md text-on-surface-variant">Closed 1w ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Detail View (Bento/Glassmorphism style approach within constraints) -->
+<div class="lg:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm overflow-hidden h-full">
+<!-- Detail Header -->
+<div class="p-stack-lg border-b border-surface-variant bg-surface relative overflow-hidden">
+<!-- Subtle background decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-stack-md relative z-10">
+<div>
+<div class="flex items-center gap-stack-sm mb-stack-sm">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">Active Posting</span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="schedule">schedule</span> Closes in 14 days
+                                </span>
+</div>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-on-surface">Software Engineering Intern</h2>
+</div>
+<div class="flex gap-stack-sm w-full md:w-auto">
+<button class="flex-1 md:flex-none flex justify-center items-center gap-stack-sm border border-primary text-primary hover:bg-primary-fixed-dim font-label-md text-label-md px-6 py-2.5 rounded shadow-[0px_2px_10px_rgba(0,0,0,0.02)] transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="edit">edit</span> Edit
+                            </button>
+<button class="flex-1 md:flex-none flex justify-center items-center gap-stack-sm bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-2.5 rounded shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:bg-surface-tint transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span> View Applicants (42)
+                            </button>
+</div>
+</div>
+</div>
+<!-- Detail Scrollable Content -->
+<div class="flex-grow overflow-y-auto custom-scrollbar p-stack-lg">
+<!-- Bento Grid for Meta Data -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-stack-sm mb-section-gap">
+<div class="bg-surface-container-low rounded-lg p-stack-md flex flex-col gap-1 border border-surface-variant">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="domain">domain</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-[10px]">Department</span>
+<span class="font-title-lg text-[16px] text-on-surface">Engineering</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-stack-md flex flex-col gap-1 border border-surface-variant">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-[10px]">Location</span>
+<span class="font-title-lg text-[16px] text-on-surface">Pune, Hybrid</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-stack-md flex flex-col gap-1 border border-surface-variant">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="payments">payments</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-[10px]">Stipend</span>
+<span class="font-title-lg text-[16px] text-on-surface">₹15k - ₹20k / mo</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-stack-md flex flex-col gap-1 border border-surface-variant">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-[10px]">Duration</span>
+<span class="font-title-lg text-[16px] text-on-surface">6 Months</span>
+</div>
+</div>
+<!-- Role Description -->
+<div class="mb-section-gap">
+<h3 class="font-title-lg text-title-lg text-on-surface mb-stack-md flex items-center gap-stack-sm border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary" data-icon="description">description</span>
+                            Role Description
+                        </h3>
+<div class="font-body-md text-body-lg text-on-surface-variant space-y-4">
+<p>We are looking for an enthusiastic Software Engineering Intern to join our core product team. In this role, you will collaborate with senior developers to build and maintain features for our main application platform.</p>
+<p>You will get hands-on experience with modern frontend frameworks, RESTful API integrations, and agile development methodologies. This is an excellent opportunity to bridge the gap between academic theory and production-level engineering.</p>
+</div>
+</div>
+<!-- Requirements -->
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-stack-md flex items-center gap-stack-sm border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                            Requirements &amp; Skills
+                        </h3>
+<ul class="font-body-md text-body-lg text-on-surface-variant space-y-3 list-none pl-1">
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary mt-1 text-[18px]" data-icon="chevron_right">chevron_right</span>
+                                Currently pursuing a B.Tech/BE in Computer Science, IT, or related field (Pre-final or Final year).
+                            </li>
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary mt-1 text-[18px]" data-icon="chevron_right">chevron_right</span>
+                                Strong foundational knowledge of JavaScript, HTML5, and CSS3.
+                            </li>
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary mt-1 text-[18px]" data-icon="chevron_right">chevron_right</span>
+                                Familiarity with modern frontend libraries (React or Vue) is highly preferred.
+                            </li>
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary mt-1 text-[18px]" data-icon="chevron_right">chevron_right</span>
+                                Basic understanding of version control systems, primarily Git.
+                            </li>
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary mt-1 text-[18px]" data-icon="chevron_right">chevron_right</span>
+                                Excellent problem-solving skills and a proactive approach to learning.
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full mt-auto border-t border-surface-variant flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-gutter max-w-container-max mx-auto py-section-gap">
+<!-- Brand / Copyright -->
+<div class="flex flex-col gap-stack-sm md:col-span-1">
+<span class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span> Raisoni
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Copyright © 2024 G.H. Raisoni College. All rights reserved.</p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-stack-sm">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Contact Us</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-stack-sm">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+</div>
+<!-- Links Column 3 -->
+<div class="flex flex-col gap-stack-sm">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Blog</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Pricing</a>
+</div>
+</div>
+</footer>
+</body></html>

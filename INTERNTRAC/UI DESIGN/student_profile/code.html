@@ -1,0 +1,374 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Student Profile - Raisoni Portal</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#984700",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f2f4f7",
+                        "secondary-container": "#8552f6",
+                        "surface": "#f7f9fc",
+                        "on-secondary-fixed-variant": "#5509c6",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1f4",
+                        "primary-fixed-dim": "#ffb68a",
+                        "on-tertiary-container": "#383838",
+                        "secondary-fixed": "#e9ddff",
+                        "outline": "#8b7264",
+                        "surface-container": "#eceef1",
+                        "background": "#f7f9fc",
+                        "tertiary": "#5e5e5e",
+                        "secondary": "#6b33dc",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-surface-variant": "#574236",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "tertiary-container": "#a2a1a1",
+                        "on-primary-fixed": "#321300",
+                        "outline-variant": "#dfc0b0",
+                        "primary-container": "#fd7e14",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#23005c",
+                        "on-background": "#191c1e",
+                        "surface-variant": "#e0e3e6",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-primary-fixed-variant": "#743500",
+                        "surface-dim": "#d8dadd",
+                        "surface-container-high": "#e6e8eb",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-surface": "#191c1e",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f7f9fc",
+                        "primary": "#984700",
+                        "on-primary-container": "#5e2900",
+                        "on-secondary-container": "#fffbff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e4e2e2",
+                        "primary-fixed": "#ffdbc8",
+                        "inverse-primary": "#ffb68a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "96px",
+                        "container-max": "1200px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface sticky top-0 z-50 w-full shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined icon-fill text-primary">school</span>
+                Raisoni Portal
+            </a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden md:flex items-center gap-8 h-full">
+<li class="h-full flex items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors h-full flex items-center" href="#">Home</a>
+</li>
+<li class="h-full flex items-center">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary font-bold h-full flex items-center" href="#">Students</a>
+</li>
+<li class="h-full flex items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors h-full flex items-center" href="#">Institutes</a>
+</li>
+<li class="h-full flex items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors h-full flex items-center" href="#">Companies</a>
+</li>
+<li class="h-full flex items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors h-full flex items-center" href="#">Mentor</a>
+</li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="hidden md:block font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors scale-95 duration-150 transition-all hover:scale-100">Login</button>
+<button class="bg-primary-container text-on-primary px-6 py-3 rounded font-label-md text-label-md hover:bg-primary transition-colors shadow-[0_4px_20px_rgba(0,0,0,0.05)] scale-95 duration-150 transition-all hover:scale-100">Sign up</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap space-y-stack-lg">
+<!-- Profile Header Section -->
+<section class="bg-surface-container-lowest rounded-xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] relative overflow-hidden group">
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed opacity-30 rounded-bl-full -z-10 transition-transform duration-500 group-hover:scale-110"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-stack-lg z-10">
+<div class="relative">
+<img class="w-32 h-32 rounded-full object-cover border-4 border-surface-container-lowest shadow-sm" data-alt="A professional headshot of a young adult student looking confident and approachable, wearing smart casual business attire. The background is a soft, blurred modern office or campus setting with bright, natural high-key lighting indicative of an optimistic, corporate modern aesthetic. The color palette emphasizes clean whites, soft greys, and warm natural skin tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNlalInvIJuauLqX94D7psYlN5z52q0CjvB3j7fB9bDonU8wYft0pluTTlNvJ1wtueaOb3AJYcPeiTLmGnIeMUHO9MyU0czzhWNAJUNEQ0kS5a1GwAr-rhFUY-X1VuL2C4OvfrHRMEhbZ6Sdl2ZZ0X06Odd1gTlFparKwNfmw9qJVDtxm5-FsHlCRhFjj4gyw8KSZlv0jqlEfiva51o4DEuyMORjsJuJXQfKdjkfvnITFp7Aa-Vrge">
+<button aria-label="Edit Profile Picture" class="absolute bottom-0 right-0 bg-surface-container-lowest p-2 rounded-full border border-surface-variant text-primary hover:bg-surface-container-low transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<div class="flex-grow space-y-2">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Alexia Reynolds</h1>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-2 font-body-lg text-body-lg text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[20px]">school</span> B.Tech in Computer Science</span>
+<span class="hidden md:inline text-surface-dim">•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[20px]">apartment</span> G.H. Raisoni College of Engineering</span>
+<span class="hidden md:inline text-surface-dim">•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[20px]">calendar_today</span> Class of 2025</span>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1 bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] icon-fill">verified</span> Actively seeking Internships
+                        </span>
+</div>
+</div>
+<div class="w-full md:w-auto flex flex-row md:flex-col gap-4 mt-4 md:mt-0">
+<button class="flex-1 md:flex-none bg-surface-container-lowest border border-outline text-on-surface px-6 py-3 rounded font-label-md text-label-md hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">share</span> Share Profile
+                    </button>
+<button class="flex-1 md:flex-none bg-secondary text-on-secondary px-6 py-3 rounded font-label-md text-label-md hover:bg-on-secondary-fixed-variant transition-colors flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+<span class="material-symbols-outlined text-[18px]">edit_document</span> Edit Details
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
+<!-- Left Column (Personal & Skills) -->
+<div class="md:col-span-4 space-y-stack-lg">
+<!-- Personal Information Card -->
+<section class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<h2 class="font-title-lg text-title-lg text-on-surface mb-6 flex items-center gap-2 border-b border-surface-variant pb-4">
+<span class="material-symbols-outlined text-primary">person</span> Personal Info
+                    </h2>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">mail</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface mb-1">Email</p>
+<a class="hover:text-primary transition-colors break-all" href="mailto:alexia.r@student.raisoni.edu">alexia.r@student.raisoni.edu</a>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">call</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface mb-1">Phone</p>
+<p class="">+91 98765 43210</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface mb-1">Location</p>
+<p class="">Pune, Maharashtra</p>
+</div>
+</li>
+<li class="flex items-start gap-3 pt-2">
+<span class="material-symbols-outlined text-surface-tint mt-0.5">link</span>
+<div class="w-full">
+<p class="font-label-md text-label-md text-on-surface mb-2">Web Presence</p>
+<div class="flex gap-2">
+<a class="p-2 bg-surface-container rounded border border-surface-variant hover:bg-surface-container-high transition-colors text-on-surface" href="#" title="LinkedIn">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="p-2 bg-surface-container rounded border border-surface-variant hover:bg-surface-container-high transition-colors text-on-surface" href="#" title="GitHub">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</section>
+<!-- Skills Card -->
+<section class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<h2 class="font-title-lg text-title-lg text-on-surface mb-6 flex items-center gap-2 border-b border-surface-variant pb-4">
+<span class="material-symbols-outlined text-secondary">code_blocks</span> Technical Skills
+                    </h2>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1.5 rounded-full font-label-md text-label-md border border-outline-variant">JavaScript</span>
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1.5 rounded-full font-label-md text-label-md border border-outline-variant">React.js</span>
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1.5 rounded-full font-label-md text-label-md border border-outline-variant">Node.js</span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md border border-surface-variant">Python</span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md border border-surface-variant">SQL</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1.5 rounded-full font-label-md text-label-md border border-secondary-fixed-dim">Tailwind CSS</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1.5 rounded-full font-label-md text-label-md border border-secondary-fixed-dim">Figma</span>
+</div>
+</section>
+</div>
+<!-- Right Column (Education & Resume) -->
+<div class="md:col-span-8 space-y-stack-lg">
+<!-- Education Timeline Card -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-center mb-8 border-b border-surface-variant pb-4">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history_edu</span> Education
+                        </h2>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span> Add
+                        </button>
+</div>
+<div class="relative border-l-2 border-surface-container-highest ml-3 space-y-8">
+<!-- Timeline Item 1 -->
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-1">
+<h3 class="font-title-lg text-title-lg text-on-surface">Bachelor of Technology in Computer Science</h3>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-1 rounded font-label-md text-label-md whitespace-nowrap">2021 - 2025</span>
+</div>
+<p class="font-body-md text-body-md text-primary font-medium mb-2">G.H. Raisoni College of Engineering</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Current CGPA: 8.9/10.0. Coursework includes Data Structures, Algorithms, Web Development, and Database Management Systems.</p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-surface-container-highest ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-1">
+<h3 class="font-title-lg text-title-lg text-on-surface text-on-surface-variant">Higher Secondary Certificate (HSC)</h3>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-1 rounded font-label-md text-label-md whitespace-nowrap">2019 - 2021</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium mb-2">Modern College of Science</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Graduated with 92%. Focus on Physics, Chemistry, and Mathematics.</p>
+</div>
+</div>
+</section>
+<!-- Resume Management Card -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<h2 class="font-title-lg text-title-lg text-on-surface mb-6 flex items-center gap-2 border-b border-surface-variant pb-4">
+<span class="material-symbols-outlined text-secondary">description</span> Resume Management
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Current Resume Preview -->
+<div class="border border-surface-variant rounded-lg p-4 flex flex-col h-full bg-surface">
+<h3 class="font-label-md text-label-md text-on-surface-variant mb-4 uppercase tracking-wider">Current Active Resume</h3>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg border border-outline-variant mb-auto shadow-sm">
+<div class="w-12 h-12 bg-error-container text-on-error-container rounded flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+</div>
+<div class="overflow-hidden">
+<p class="font-body-md text-body-md text-on-surface font-medium truncate">Alexia_Reynolds_Resume_2024.pdf</p>
+<p class="font-body-md text-[12px] text-surface-tint">Uploaded on Oct 12, 2023 • 2.4 MB</p>
+</div>
+</div>
+<div class="flex gap-3 mt-6">
+<button class="flex-1 bg-surface-container border border-outline-variant text-on-surface py-2 rounded font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">visibility</span> Preview
+                                </button>
+<button class="flex-1 bg-surface-container border border-outline-variant text-on-surface py-2 rounded font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">download</span> Download
+                                </button>
+</div>
+</div>
+<!-- Upload New Dropzone -->
+<div class="border-2 border-dashed border-primary-container/40 rounded-lg p-6 flex flex-col items-center justify-center text-center bg-primary-fixed/10 hover:bg-primary-fixed/20 transition-colors cursor-pointer group h-full min-h-[200px]">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-[32px]">upload_file</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Upload New Resume</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 max-w-[200px]">Drag and drop your file here, or click to browse.</p>
+<span class="font-label-md text-label-md text-surface-tint">Supported formats: PDF, DOCX (Max 5MB)</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface w-full mt-auto border-t border-surface-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-gutter max-w-container-max mx-auto py-section-gap">
+<!-- Brand Column -->
+<div class="space-y-4 md:col-span-1">
+<a class="font-headline-md text-headline-md font-bold text-secondary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined icon-fill">school</span>
+                    Raisoni
+                </a>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
+                    Empowering students to bridge the gap between academic learning and professional success.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Platform</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Pricing</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Legal</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<!-- Support Column -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Support</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Mentor</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Banner -->
+<div class="border-t border-surface-variant py-6 px-gutter text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">Copyright © 2024 G.H. Raisoni College. All rights reserved.</p>
+</div>
+</footer>
+
+
+</body></html>
